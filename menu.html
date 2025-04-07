@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Texas Crispy Chicken</title>
+    <link rel="icon" href="assets/images/logo.svg" type="image/x-icon">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Slick Carousel CSS -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caprasimo&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <link href="https://db.onlinewebfonts.com/c/9a835ecd5504d7ec84ad5fa704987c94?family=National+2+Bold"
+        rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Just+Another+Hand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+    <!-- Navbar section -->
+    <div class="navbar-image">
+        <img width="100%" src="assets/images/navbar-upper.png" alt="">
+    </div>
+
+    <div class="navbar-section">
+        <nav>
+            <a href="./index.html" class="home-link"><img src="assets/images/logo.svg" width="100" alt="Logo" class="logo" /></a>
+            <ul class="links">
+                <li><a href="./menu.html">Menu</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Offers</a></li>
+                <li><a href="#">Locations</a></li>
+            </ul>
+            <div class="nav-buttons">
+                <button class="change-location-btn">
+                    <img width="20" src="assets/icons/location.svg" alt="">
+                    Change location
+                </button>
+                <img class="menu-icon" src="assets/icons/menu-icon.png" alt="" onclick="openNav()">
+            </div>
+        </nav>
+    </div>
+
+    <!-- Mobile version -->
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="./menu.html" style="font-family: 'national-park-meduim'">Menu</a>
+        <a href="#" style="font-family: 'national-park-meduim'">Rewards</a>
+        <a href="#" style="font-family: 'national-park-meduim'">Offers</a>
+        <a href="#" style="font-family: 'national-park-meduim'">Locations</a>
+    </div>
+
+    <!-- Hero section -->
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="hero-section menu-slide-1">
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="hero-section menu-slide-2">
+                <div class="hero-inner-section" style="margin: 0;">
+                    <img src="assets/images/logo2.svg" alt="">
+                    <p>TEXAS</p>
+                    <p>CRISPY CHICKEN</p>
+                </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="hero-section menu-slide-3">
+                <div class="hero-inner-section" style="margin: 0;">  
+                    <img src="assets/images/logo2.svg" alt="">
+                    <p>TEXAS</p>
+                    <p>CRISPY CHICKEN</p>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <!-- Menu section -->
+
+    <div class="menu-item-section">
+        <div class="content">
+            <h1 class="title">Texas Crisy Chicken <span>Menu</span></h1>
+            <p class="sub-title">
+                A bold selection of the best fresh-fried chicken sandwiches, crispy chicken wraps, broasted chicken meals and
+                flavor poppin’ sides! Browse Texas Crispy Chicken™ TX menu and pick your favorite for lunch or dinner.
+            </p>
+            <ul class="links-nav nav nav-tabs">
+                <li class="nav-item" role="presentation">
+                    <button class="link nav-link active" id="tenders-tab" data-bs-toggle="tab" data-bs-target="#tenders" type="button" role="tab" aria-controls="tenders" aria-selected="true"><span>Chicken Tenders</span></button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="link nav-link" id="fried-tab" data-bs-toggle="tab" data-bs-target="#fried" type="button" role="tab" aria-controls="fried" aria-selected="false"><span>Fried Chicken Pieces</span></button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="link nav-link" id="burgers-tab" data-bs-toggle="tab" data-bs-target="#burgers" type="button" role="tab" aria-controls="burgers" aria-selected="false"><span>Burgers & Wraps</span></button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="link nav-link" id="fries-tab" data-bs-toggle="tab" data-bs-target="#fries" type="button" role="tab" aria-controls="fries" aria-selected="false"><span>Loaded Fries</span></button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="link nav-link" id="rice-tab" data-bs-toggle="tab" data-bs-target="#rice" type="button" role="tab" aria-controls="rice" aria-selected="false"><span>Rice Boxes</span></button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="link nav-link" id="sides-tab" data-bs-toggle="tab" data-bs-target="#sides" type="button" role="tab" aria-controls="sides" aria-selected="false"><span>Sides & Extras</span></button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="link nav-link" id="kids-tab" data-bs-toggle="tab" data-bs-target="#kids" type="button" role="tab" aria-controls="kids" aria-selected="false"><span>Kids’ Meals</span></button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="link nav-link" id="drinks-tab" data-bs-toggle="tab" data-bs-target="#drinks" type="button" role="tab" aria-controls="drinks" aria-selected="false"><span>Drinks & Desserts</span></button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="link nav-link" id="family-tab" data-bs-toggle="tab" data-bs-target="#family" type="button" role="tab" aria-controls="family" aria-selected="false"><span>Family Meal Deals</span></button>
+                  </li>
+            </ul>
+            
+        </div>
+        <div class="menu-items-container">
+            <div class="tab-content" id="menuTabContent">
+                <!-- Chicken Tenders Container -->
+                <div class="tab-pane fade show active" id="tenders" role="tabpanel" aria-labelledby="tenders-tab">
+                    <div class="row justify-content-center">
+                        <!-- Initial 4 Cards -->
+                        <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-xs-12 px-xs-0">
+                            <div class="menu-product-card">
+                                <div class="menu-product-card-image">
+                                    <img src="assets/images/chicken-tenders/1 number pic.png" alt="" class="image" />
+                                    <span></span>
+                                </div>
+                                <div class="menu-product-card-body">
+                                    <h5 class="menu-product-card-title">Crispy Chicken <br /> Tenders</h5>
+                                    <p class="menu-product-card-text">2 pices golden, seasoned crispy chicken tenders with a crunchy exterior and juicy inside.</p>
+                                </div>
+                                <div class="menu-product-card-footer">
+                                    <h2 class="menu-product-card-price">$9.99</h2>
+                                    <button class="menu-product-card-order-btn">Order Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-xs-12 px-xs-0">
+                            <div class="menu-product-card">
+                                <div class="menu-product-card-image">
+                                    <img src="assets/images/chicken-tenders/2 number pic.png" alt="" class="image" />
+                                    <span></span>
+                                </div>
+                                <div class="menu-product-card-body">
+                                    <h5 class="menu-product-card-title">Crispy Chicken <br /> Tenders</h5>
+                                    <p class="menu-product-card-text">3 pices golden, seasoned crispy chicken tenders with a crunchy exterior and juicy inside.</p>
+                                </div>
+                                <div class="menu-product-card-footer">
+                                    <h2 class="menu-product-card-price">$9.99</h2>
+                                    <button class="menu-product-card-order-btn">Order Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-xs-12 px-xs-0">
+                            <div class="menu-product-card">
+                                <div class="menu-product-card-image">
+                                    <img src="assets/images/chicken-tenders/3 number pic.png" alt="" class="image" />
+                                    <span></span>
+                                </div>
+                                <div class="menu-product-card-body">
+                                    <h5 class="menu-product-card-title">Crispy Chicken <br /> Tenders</h5>
+                                    <p class="menu-product-card-text">5 pices golden, seasoned crispy chicken tenders with a crunchy exterior and juicy inside.</p>
+                                </div>
+                                <div class="menu-product-card-footer">
+                                    <h2 class="menu-product-card-price">$9.99</h2>
+                                    <button class="menu-product-card-order-btn">Order Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-xs-12 px-xs-0">
+                            <div class="menu-product-card">
+                                <div class="menu-product-card-image">
+                                    <img src="assets/images/chicken-tenders/4 number pic.png" alt="" class="image" />
+                                    <span></span>
+                                </div>
+                                <div class="menu-product-card-body">
+                                    <h5 class="menu-product-card-title">Crispy Chicken <br /> Tenders</h5>
+                                    <p class="menu-product-card-text">3 crispy chicken tenders + 2 hot wings.</p>
+                                </div>
+                                <div class="menu-product-card-footer">
+                                    <h2 class="menu-product-card-price">$9.99</h2>
+                                    <button class="menu-product-card-order-btn">Order Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-xs-12 px-xs-0">
+                            <div class="menu-product-card">
+                                <div class="menu-product-card-image">
+                                    <img src="assets/images/chicken-tenders/5 number pic.png" alt="" class="image" />
+                                    <span></span>
+                                </div>
+                                <div class="menu-product-card-body">
+                                    <h5 class="menu-product-card-title">Crispy Chicken <br /> Tenders</h5>
+                                    <p class="menu-product-card-text">3 crispy chicken tenders + 1 Piece Crispy Fried Chicken.</p>
+                                </div>
+                                <div class="menu-product-card-footer">
+                                    <h2 class="menu-product-card-price">$9.99</h2>
+                                    <button class="menu-product-card-order-btn">Order Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Fried Tenders Container -->
+                <div class="tab-pane fade" id="fried" role="tabpanel" aria-labelledby="fried-tab">
+                    <div class="row justify-content-center">
+                        <!-- Initial 4 Cards -->
+                        <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-xs-12 px-xs-0">
+                            <div class="menu-product-card">
+                                <div class="menu-product-card-image">
+                                    <img src="assets/images/fried-chicken/1 number.png" alt="" class="image" />
+                                    <span></span>
+                                </div>
+                                <div class="menu-product-card-body">
+                                    <h5 class="menu-product-card-title">Crispy Fried Chicken <br /> (1 Piece)</h5>
+                                    <p class="menu-product-card-text">2 pices golden, seasoned crispy chicken tenders with a crunchy exterior and juicy inside.</p>
+                                </div>
+                                <div class="menu-product-card-footer">
+                                    <h2 class="menu-product-card-price">$9.99</h2>
+                                    <button class="menu-product-card-order-btn">Order Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-xs-12 px-xs-0">
+                            <div class="menu-product-card">
+                                <div class="menu-product-card-image">
+                                    <img src="assets/images/fried-chicken/2 number.png" alt="" class="image" />
+                                    <span></span>
+                                </div>
+                                <div class="menu-product-card-body">
+                                    <h5 class="menu-product-card-title">Crispy Fried Chicken <br /> (2 Pieces)</h5>
+                                    <p class="menu-product-card-text">
+                                        Perfectly seasoned and deep-fried, tender inside with a golden-brown exterior.
+                                    </p>
+                                </div>
+                                <div class="menu-product-card-footer">
+                                    <h2 class="menu-product-card-price">$9.99</h2>
+                                    <button class="menu-product-card-order-btn">Order Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-xs-12 px-xs-0">
+                            <div class="menu-product-card">
+                                <div class="menu-product-card-image">
+                                    <img src="assets/images/fried-chicken/3 number.png" alt="" class="image" />
+                                    <span></span>
+                                </div>
+                                <div class="menu-product-card-body">
+                                    <h5 class="menu-product-card-title">Crispy Fried Chicken <br /> (3 Pieces)</h5>
+                                    <p class="menu-product-card-text">Two pieces of golden, seasoned fried chicken.</p>
+                                </div>
+                                <div class="menu-product-card-footer">
+                                    <h2 class="menu-product-card-price">$9.99</h2>
+                                    <button class="menu-product-card-order-btn">Order Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-xs-12 px-xs-0">
+                            <div class="menu-product-card">
+                                <div class="menu-product-card-image">
+                                    <img src="assets/images/fried-chicken/4 number.png" alt="" class="image object-fit-cover" />
+                                    <span></span>
+                                </div>
+                                <div class="menu-product-card-body">
+                                    <h5 class="menu-product-card-title">Crispy Fried Chicken <br /> (5 Pieces)</h5>
+                                    <p class="menu-product-card-text">Five pieces of our signature crispy fried</p>
+                                </div>
+                                <div class="menu-product-card-footer">
+                                    <h2 class="menu-product-card-price">$9.99</h2>
+                                    <button class="menu-product-card-order-btn">Order Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-xs-12 px-xs-0">
+                            <div class="menu-product-card">
+                                <div class="menu-product-card-image">
+                                    <img src="assets/images/fried-chicken/5 number.png" alt="" class="image" />
+                                    <span></span>
+                                </div>
+                                <div class="menu-product-card-body">
+                                    <h5 class="menu-product-card-title">Hot Wings Meal</h5>
+                                    <p class="menu-product-card-text">6 spicy wings, deep-fried to crispy perfection.</p>
+                                </div>
+                                <div class="menu-product-card-footer">
+                                    <h2 class="menu-product-card-price">$9.99</h2>
+                                    <button class="menu-product-card-order-btn">Order Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-xs-12 px-xs-0">
+                            <div class="menu-product-card">
+                                <div class="menu-product-card-image">
+                                    <img src="assets/images/fried-chicken/6 number.png" alt="" class="image" />
+                                    <span></span>
+                                </div>
+                                <div class="menu-product-card-body">
+                                    <h5 class="menu-product-card-title">Mixed Fried Chicken Box</h5>
+                                    <p class="menu-product-card-text">2 crispy fried chicken pieces + 2 crispy chicken tenders.</p>
+                                </div>
+                                <div class="menu-product-card-footer">
+                                    <h2 class="menu-product-card-price">$9.99</h2>
+                                    <button class="menu-product-card-order-btn">Order Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="burgers" role="tabpanel" aria-labelledby="burgers-tab">
+                    <h1 class="title">Burgers & Wraps content</h1>
+                  </div>
+                  <div class="tab-pane fade" id="fries" role="tabpanel" aria-labelledby="fries-tab">
+                    <h1 class="title">Loaded Fries content</h1>
+                  </div>
+                  <div class="tab-pane fade" id="rice" role="tabpanel" aria-labelledby="rice-tab">
+                    <h1 class="title">Rice Boxes content</h1>
+                  </div>
+                  <div class="tab-pane fade" id="sides" role="tabpanel" aria-labelledby="sides-tab">
+                    <h1 class="title">Sides & Extras content</h1>
+                  </div>
+                  <div class="tab-pane fade" id="kids" role="tabpanel" aria-labelledby="kids-tab">
+                    <h1 class="title">Kids’ Meals content</h1>
+                  </div>
+                  <div class="tab-pane fade" id="drinks" role="tabpanel" aria-labelledby="drinks-tab">
+                    <h1 class="title">Drinks & Desserts content</h1>
+                  </div>
+                  <div class="tab-pane fade" id="family" role="tabpanel" aria-labelledby="family-tab">
+                    <h1 class="title">Family Meal Deals content</h1>
+                  </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+
+    <div class="about-section-container">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <h1>Texas Crispy Chicken – Redefining the fast-food experience with its exceptionalfried chicken</h1>
+                    <p>
+                        This haven for fried chicken enthusiasts serves up an array of tantalizing options, featuring a
+                        menu that boasts the crispiest and most flavorful chicken in the city. At Texas Crispy Chicken,
+                        each dish is a masterpiece, from the classic Crispy Chicken to the ever-popular Crispy Zenga
+                        Burger.
+                    </p>
+                    <br>
+                    <p>
+                        Our Kababjees Fried Chicken menu is carefully curated to ensure every bite is a delightful
+                        experience. Whether you're craving Crispy Chicken Wings or the best fried chicken in Texas, our
+                        menu is designed to cater to all tastes. What sets us apart is our dedication to quality and
+                        flavor, making us a standout choice for fried chicken in Texas.
+                    </p>
+                    <br>
+                    <p>
+                        Convenience is a key in today's fast-paced world. Texas Crispy Chicken delivery is swift and
+                        reliable, ensuring that your meal arrives hot, fresh, and ready to delight your taste buds. With
+                        exciting fried chicken deals, we offer great value, making our mouth-watering chicken accessible
+                        to everyone.
+                    </p>
+                    <br>
+                    <p>
+                        At Texas Crispy Chicken, we're committed to offering the most delicious crispy fried chicken
+                        that Texas loves. So what are you waiting for? ORDER NOW and enjoy the best fried chicken in the
+                        city.
+                    </p>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <img src="assets/images/chiken.png" alt="" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+     
+    <!-- Footer Section -->
+
+    <section class="footer-section">
+        <div class="footer-1">
+            <div class="footer-left">
+                <div>
+                    <img src="assets/images/logo.svg" alt="Logo">
+                </div>
+                <ul class="footer-menu">
+                    <li><span>Links</span></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Rewards</a></li>
+                    <li><a href="#">offers</a></li>
+                    <li><a href="#">Locations</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-center">
+                <ul class="footer-contact">
+                    <li><span>Contact US</span></li>
+                    <li>(903) 740-1464</li>
+                    <li>
+                        Suit #2, 3001 Estes<br>
+                        Pkwy Longview, TX75602 USA<br>
+                        16117 State Hwy 64, Tyler, TX 75707<br>
+                        texascrispychicken@gmail.com
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer-mockup">
+                <img src="assets/images/mockup.png" alt="App Mockup" class="mockup-img">
+            </div>
+            <div class="footer-right">
+                
+                <div class="app-section">
+                    <h3>Get The App</h3>
+                    <p>App is where the fun is! It'sEasy, Fast and Convenient.</p>
+                    <div class="app-buttons">
+                        <img src="assets/images/app-store.png" alt="Download on App Store">
+                        <img src="assets/images/google-play.png" alt="Get it on Google Play">
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="footer-2">
+            <div class="footer-bottom">
+                <p>® 2025 Texas Crispy Chicken</p>
+                <p><a>Privacy Policy</a></p>
+                <p>Do Not Sell or Share My Personal Information</p>
+                <p><a>Terms of Use</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS (optional for interactive components) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-rZ6TepNbjSXXxmN1xg8l4r4KRtKpD6B6Mq/NFU3v3N6wH0j5FNA6Dkh6Ij0UnRfz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- jQuery (required for Slick Carousel) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+    <!-- Other JS work code -->
+    <script>
+        // Links Active
+        document.addEventListener("DOMContentLoaded", function () {
+            const currentPath = window.location.pathname.split("/").pop(); // e.g. menu.html
+            const links = document.querySelectorAll(".links a");
+
+            links.forEach(link => {
+            const href = link.getAttribute("href");
+            const fileName = href.split("/").pop(); // strip ./ if present
+            if (fileName === currentPath) {
+                link.parentElement.classList.add("active");
+            }
+            });
+        });
+    </script>
+
+</body>
+
+</html>

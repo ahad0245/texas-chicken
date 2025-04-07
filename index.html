@@ -36,7 +36,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
 
 
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="style.css">
 
 </head>
 
@@ -50,9 +50,9 @@
 
     <div class="navbar-section">
         <nav>
-            <img src="assets/images/logo.svg" width="100" alt="Logo" class="logo" />
+            <a href="./index.html" class="home-link"><img src="assets/images/logo.svg" width="100" alt="Logo" class="logo" /></a>
             <ul class="links">
-                <li><a href="#">Menu</a></li>
+                <li><a href="./menu.html">Menu</a></li>
                 <li><a href="#">Contact</a></li>
                 <li><a href="#">Offers</a></li>
                 <li><a href="#">Locations</a></li>
@@ -79,7 +79,20 @@
 
     <!-- Hero section -->
 
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="hero-section">
+        <div class="video">
+            <video autoplay loop muted playsinline>
+                <source src="./assets/images/home-banner-1.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="hero-inner-section">
+            <img src="assets/images/logo2.svg" alt="">
+            <p>TEXAS</p>
+            <p>CRISPY CHICKEN</p>
+        </div>
+    </div>
+
+    <!-- <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -87,7 +100,7 @@
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <div class="hero-section">
+            <div class="hero-section home-slide-1">
                 <div class="hero-inner-section">
                     <img src="assets/images/logo2.svg" alt="">
                     <p>TEXAS</p>
@@ -96,7 +109,7 @@
             </div>
           </div>
           <div class="carousel-item">
-            <div class="hero-section">
+            <div class="hero-section home-slide-2">
                 <div class="hero-inner-section">
                     <img src="assets/images/logo2.svg" alt="">
                     <p>TEXAS</p>
@@ -105,7 +118,7 @@
             </div>
           </div>
           <div class="carousel-item">
-            <div class="hero-section">
+            <div class="hero-section home-slide-3">
                 <div class="hero-inner-section">
                     <img src="assets/images/logo2.svg" alt="">
                     <p>TEXAS</p>
@@ -114,7 +127,7 @@
             </div>
           </div>
         </div>
-    </div>
+    </div> -->
 
     <!-- Menu section -->
 
@@ -172,7 +185,8 @@
     </div>
 
     <div class="container-fluid">
-        <div class="row">
+        <div class="row" id="product-container">
+            <!-- Initial 4 Cards -->
             <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12 mb-4 px-xs-0">
                 <div class="product-card">
                     <img src="assets/images/menu.png" alt="" class="image">
@@ -209,9 +223,9 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 px-0 text-center pt-3">
-                <button class="primary-btn">Load more...</button>
-            </div>
+        </div>
+        <div class="col-12 px-0 text-center pt-3">
+            <button class="primary-btn" id="load-more">Load more...</button>
         </div>
     </div>
 
@@ -230,7 +244,7 @@
             <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12 mb-4 px-xs-0">
                 <div class="product-card">
                     <img src="assets/icons/best-seller.svg" alt="Icon" class="icon">
-                    <img src="assets/images/crispy chicken bucket.png" alt="" class="image">
+                    <img src="assets/images/main-page-bucket.png" alt="" class="image">
                     <div class="product-card-body">
                         <h5 class="product-card-title">Zesty Lemon Wings</h5>
                         <p class="product-card-text">8 Pcs. Spices to perfection, dusted with our special Zesty Lemon...</p>
@@ -244,7 +258,7 @@
             <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12 mb-4 px-xs-0">
                 <div class="product-card">
                     <img src="assets/icons/best-seller.svg" alt="Icon" class="icon">
-                    <img src="assets/images/crispy chicken bucket.png" alt="" class="image">
+                    <img src="assets/images/main-page-bucket.png" alt="" class="image">
                     <div class="product-card-body">
                         <h5 class="product-card-title">Zesty Lemon Wings</h5>
                         <p class="product-card-text">8 Pcs. Spices to perfection, dusted with our special Zesty Lemon...</p>
@@ -258,7 +272,7 @@
             <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12 mb-4 px-xs-0">
                 <div class="product-card">
                     <img src="assets/icons/best-seller.svg" alt="Icon" class="icon">
-                    <img src="assets/images/crispy chicken bucket.png" alt="" class="image">
+                    <img src="assets/images/main-page-bucket.png" alt="" class="image">
                     <div class="product-card-body">
                         <h5 class="product-card-title">Zesty Lemon Wings</h5>
                         <p class="product-card-text">8 Pcs. Spices to perfection, dusted with our special Zesty Lemon...</p>
@@ -272,7 +286,7 @@
             <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12 mb-4 px-xs-0">
                 <div class="product-card">
                     <img src="assets/icons/best-seller.svg" alt="Icon" class="icon">
-                    <img src="assets/images/crispy chicken bucket.png" alt="" class="image">
+                    <img src="assets/images/main-page-bucket.png" alt="" class="image">
                     <div class="product-card-body">
                         <h5 class="product-card-title">Zesty Lemon Wings</h5>
                         <p class="product-card-text">8 Pcs. Spices to perfection, dusted with our special Zesty Lemon...</p>
@@ -290,16 +304,16 @@
 
     <div class="location-section-container">
         <div class="row w-100 align-items-center">
-            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 content">
                 <h1>FIND YOUR NEAREST <br /> TEXAS CRISPY CHICKEN™</h1>
                 <p>Craving some bold, crispy and juicy broasted chicken? Search your location now and find your nearest Texas Crispy Chicken in Texas.™</p>
                 <button class="find-location-btn">Locations</button>
             </div>
-            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 p-0">
                 <div class="map-container">
                     <iframe 
                         width="100%" 
-                        height="400" 
+                        height="100%" 
                         frameborder="0" 
                         style="border:0;" 
                         allowfullscreen 
@@ -353,67 +367,59 @@
             </div>
         </div>
     </div>
+     
+    <!-- Footer Section -->
 
     <section class="footer-section">
         <div class="footer-1">
-            <img src="assets/images/logo.svg" alt="">
-            <div>
-                <ul>
-                    <li>
-                        <a href="#">Menu</a>
-                    </li>
-                    <br>
-                    <li>
-                        <a href="#">Rewards</a>
-                    </li>
-                    <br>
-                    <li>
-                        <a href="#">offers</a>
-                    </li>
-                    <br>
-                    <li>
-                        <a href="#">Locations</a>
-                    </li>
+            <div class="footer-left">
+                <div>
+                    <img src="assets/images/logo.svg" alt="Logo">
+                </div>
+                <ul class="footer-menu">
+                    <li><span>Links</span></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Rewards</a></li>
+                    <li><a href="#">offers</a></li>
+                    <li><a href="#">Locations</a></li>
                 </ul>
             </div>
-            <div style="width: 366px;">
-                <ul>
-                    <li>Contact US</li>
-                    <br>
+    
+            <div class="footer-center">
+                <ul class="footer-contact">
+                    <li><span>Contact US</span></li>
                     <li>(903) 740-1464</li>
-                    <br>
                     <li>
-                        Suit #2, 3001 Estes
-                        <br/>
-                        Pkwy Longview,
-                        <br />
-                        TX75602 USA
-                        <br />
-                        16117 State Hwy 64, Tyler, TX 75707
+                        Suit #2, 3001 Estes<br>
+                        Pkwy Longview, TX75602 USA<br>
+                        16117 State Hwy 64, Tyler, TX 75707<br>
+                        texascrispychicken@gmail.com
                     </li>
-                    <br>
-                    <li>texascrispychicken@gmail.com</li>
                 </ul>
             </div>
-            <div>
-                <img src="assets/images/mockup.png" alt="" class="img-fluid" style="margin-top: -150px;">
+
+            <div class="footer-mockup">
+                <img src="assets/images/mockup.png" alt="App Mockup" class="mockup-img">
             </div>
-            <div>
-                <p style="font-family: Jura, sans-serif; font-size: 30px; font-weight: 600; color: white;">Get The App</p>
-                <p style="font-family: Jura, sans-serif; font-size: 20px; color: white; margin-bottom: 20px;">App is where the fun is! It'sEasy, Fast and Convenient.</p>
-                <img src="assets/images/app-store.png" alt="">
-                <br>
-                <br>
-                <img src="assets/images/google-play.png" alt="">
+            <div class="footer-right">
+                
+                <div class="app-section">
+                    <h3>Get The App</h3>
+                    <p>App is where the fun is! It'sEasy, Fast and Convenient.</p>
+                    <div class="app-buttons">
+                        <img src="assets/images/app-store.png" alt="Download on App Store">
+                        <img src="assets/images/google-play.png" alt="Get it on Google Play">
+                    </div>
+                </div>
             </div>
         </div>
+    
         <div class="footer-2">
-            <div
-                style="display: flex; justify-content: space-between; align-items: center; color: white; font-weight: 600;">
+            <div class="footer-bottom">
                 <p>® 2025 Texas Crispy Chicken</p>
-                <p>Privacy Policy</p>
+                <p><a>Privacy Policy</a></p>
                 <p>Do Not Sell or Share My Personal Information</p>
-                <p>Terms of Use</p>
+                <p><a>Terms of Use</a></p>
             </div>
         </div>
     </section>
@@ -473,6 +479,46 @@
         function closeNav() {
             document.getElementById("mySidenav").style.width = "0";
         }
+    </script>
+
+    <!-- Other JS work code -->
+    <script>
+        // Links Active
+        document.addEventListener("DOMContentLoaded", function () {
+            const currentPath = window.location.pathname.split("/").pop(); // e.g. menu.html
+            const links = document.querySelectorAll(".links a");
+
+            links.forEach(link => {
+            const href = link.getAttribute("href");
+            const fileName = href.split("/").pop(); // strip ./ if present
+            if (fileName === currentPath) {
+                link.parentElement.classList.add("active");
+            }
+            });
+        });
+        // Add 4 Product Card Script
+        document.getElementById('load-more').addEventListener('click', function () {
+            let container = document.getElementById('product-container');
+            let button = document.getElementById('load-more');
+
+            for (let i = 0; i < 4; i++) {
+                let newCard = document.createElement('div');
+                newCard.className = "col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12 mb-4 px-xs-0";
+                newCard.innerHTML = `
+                    <div class="product-card">
+                        <img src="assets/images/menu.png" alt="" class="image">
+                        <div class="product-card-body">
+                            <h5 class="product-card-title">Legs Quarte</h5>
+                            <p class="product-card-text">2 Pcs Crispy Chicken Leg & Dip.</p>
+                        </div>
+                    </div>
+                `;
+                container.appendChild(newCard);
+            }
+
+            // Load More Button ko Hide kar dein
+            button.style.display = 'none';
+        });
     </script>
 
 </body>
