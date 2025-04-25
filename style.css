@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
     font-family: 'national-park-regular';
     src: url(assets/fonts/TestNational2Condensed-Regular.otf);
 }
@@ -11,12 +11,18 @@
 @font-face {
     font-family: 'national-park-bold';
     src: url(assets/fonts/TestNational2Condensed-Bold.otf);
-}
+} */
+
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 body {
+    /* font-family: "Roboto", sans-serif !important; */
+    font-family: "Poppins", sans-serif !important;
     box-sizing: border-box;
     overflow: hidden;
 }
+
 html,
 body {
     overflow-x: hidden;
@@ -49,7 +55,7 @@ p {
     margin: 0 50px;
 }
 
-.slider > div {
+.slider>div {
     padding: 40px 0;
 }
 
@@ -63,10 +69,10 @@ p {
 .slider div p {
     text-align: center !important;
     color: rgb(0, 0, 0);
-    font-size: 25px;
+    font-size: 22px;
     border-radius: 10px;
     margin-top: 10px;
-    font-family: 'national-park-regular';
+    /* font-family: 'national-park-regular'; */
     display: block;
     width: max-content;
 }
@@ -83,13 +89,15 @@ ul li {
 .navbar-image {
     height: 60px;
 }
+
 .navbar-image img {
     width: 100%;
     height: 60px;
     object-fit: cover;
 }
+
 .navbar-section {
-    font-family: 'national-park-regular';
+    /* font-family: 'national-park-regular'; */
     padding: 0 50px 20px 50px;
 }
 
@@ -98,12 +106,15 @@ ul li {
     justify-content: space-between;
     align-items: center;
 }
+
 .navbar-section nav .home-link {
     cursor: pointer;
 }
+
 .navbar-section nav .home-link .logo {
     width: 100px;
 }
+
 .navbar-section nav ul.links {
     margin: 0;
     padding: 0;
@@ -112,7 +123,7 @@ ul li {
 }
 
 .navbar-section nav ul.links li a {
-    font-size: 30px;
+    font-size: 22px;
     font-weight: 400;
     transition: 0.5s;
     color: black !important;
@@ -124,29 +135,69 @@ ul li {
 
 .navbar-section nav .nav-buttons {
     display: flex;
-    gap: 80px;
+    gap: 15px;
     align-items: center;
+}
+
+.navbar-section nav .bucket-btn {
+    background-color: white;
+    height: 45px;
+    width: 45px;
+    border: none;
+    outline: none;
+    padding: 0;
+    line-height: normal;
+    position: relative;
+}
+
+.navbar-section nav .bucket-btn img {
+    width: 100%;
+    height: auto;
+}
+
+.navbar-section nav .bucket-btn p {
+    height: 17px;
+    width: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    position: absolute;
+    border-radius: 100%;
+    background-color: #000;
+    color: #fff;
+    font-size: 12px;
+    font-family: 'national-park-regular';
+    font-weight: 500;
+    line-height: 17px;
 }
 
 .navbar-section nav .nav-buttons .menu-icon {
     cursor: pointer;
-    display: none; /* Hide by default */
-    width: 50px;
+    display: none;
+    /* Hide by default */
+    width: 40px;
 }
+
 .navbar-section nav .nav-buttons .change-location-btn {
     font-family: "Inter", sans-serif;
     background-color: #FF0000;
     color: white;
     line-height: normal;
     font-weight: 800;
-    font-size: 16px;
+    font-size: 14px;
     border: none;
     padding: 0 30px;
-    height: 60px;
+    height: 45px;
     border-radius: 100px;
     display: flex;
     align-items: center;
     gap: 8px;
+}
+
+.navbar-section nav .nav-buttons .change-location-btn img {
+    width: 15px;
 }
 
 /* Mobile Navigation */
@@ -239,7 +290,8 @@ ul li {
     display: flex;
     align-items: center;
     position: relative;
-    overflow: hidden; /* Taake video aur content properly bounded rahein */
+    overflow: hidden;
+    /* Taake video aur content properly bounded rahein */
 }
 
 .hero-section .video {
@@ -251,9 +303,11 @@ ul li {
     object-fit: cover;
     z-index: -1;
 }
+
 .hero-section .video .vsc-controller {
     display: none !important;
 }
+
 .hero-section .video video {
     width: 100%;
     height: 100%;
@@ -267,13 +321,39 @@ ul li {
     background-image: url('./assets/images/hero.png');
 } */
 .menu-slide-1 {
-    background-image: url('./assets/images/fried-chicken-banner.png');
-}
-.menu-slide-2 {
     background-image: url('./assets/images/chicken-tenders-banner.png');
 }
+
+.menu-slide-2 {
+    background-image: url('./assets/images/fried-chicken-banner.png');
+}
+
 .menu-slide-3 {
-    background-image: url('./assets/images/hero.png');
+    background-image: url('./assets/images/burgers-wraps-banner.png');
+}
+
+.menu-slide-4 {
+    background-image: url('./assets/images/loded-frise-banner.png');
+}
+
+.menu-slide-5 {
+    background-image: url('./assets/images/rice-box-banner.png');
+}
+
+.menu-slide-6 {
+    background-image: url('./assets/images/sides-and-extras-banner.png');
+}
+
+.menu-slide-7 {
+    background-image: url('./assets/images/kids-meals-banner.png');
+}
+
+.menu-slide-8 {
+    background-image: url('./assets/images/drink-and-disert-banner.png');
+}
+
+.menu-slide-9 {
+    background-image: url('./assets/images/family-meals/banner.png');
 }
 
 .hero-section .hero-inner-section {
@@ -283,6 +363,7 @@ ul li {
     z-index: 1;
     margin: 0 auto;
 }
+
 .hero-section .hero-inner-section img {
     max-width: 300px;
     width: 100%;
@@ -324,19 +405,51 @@ ul li {
 }
 
 .popular-items-container .title {
-    font-family: 'national-park-bold';
-    font-size: 40px;
+    /* font-family: 'national-park-bold'; */
+    font-size: 30px;
+    font-weight: 800;
     color: #000;
     margin-bottom: 10px;
     line-height: normal;
 }
 
 .popular-items-container .sub-title {
-    font-family: 'national-park-regular';
-    font-size: 30px;
+    /* font-family: 'national-park-regular'; */
+    font-size: 25px;
     color: #000;
     margin-bottom: 10px;
     line-height: normal;
+}
+
+.popular-items-image {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.popular-items-image img {
+    height: auto;
+    display: block;
+    max-width: 300px;   
+    width: 100%;
+    border-radius: 100%;
+    transition: 0.5s;
+}
+
+.popular-items-image img:hover {
+    filter: brightness(40%);
+    cursor: pointer;
+}
+
+.popular-menu-text {
+    /* font-family: 'national-park-bold'; */
+    color: red !important;
+    margin-top: 30px;
+    font-size: 30px;
+    font-weight: 700;
 }
 
 /* Every Bite Section  */
@@ -354,6 +467,7 @@ ul li {
     justify-content: flex-end;
     background-position-x: right;
 }
+
 .every-bite-section .content h4 {
     font-family: 'Dancing Script', cursive;
     font-size: 60px;
@@ -361,6 +475,7 @@ ul li {
     font-weight: 600;
     line-height: normal;
 }
+
 .every-bite-section .content h1 {
     font-family: "Montserrat", sans-serif;
     color: #FEA61E;
@@ -369,9 +484,11 @@ ul li {
     line-height: 90px;
     font-weight: 900;
 }
-/* Product card CSS */ 
+
+/* Product card CSS */
 .product-card {
-    padding: 40px 20px 30px 20px;;
+    padding: 40px 20px 30px 20px;
+    ;
     transition: 0.5s;
     border-radius: 20px;
     border: 2px solid transparent;
@@ -379,78 +496,170 @@ ul li {
     position: relative;
     cursor: pointer;
 }
+
 .product-card:hover {
     border: 2px solid #FF0000;
 }
+
 .product-card .icon {
-    position: absolute; 
-    top: -32px; 
-    right: -32px; 
-    z-index: 222; 
+    position: absolute;
+    top: -32px;
+    right: -32px;
+    z-index: 222;
     width: 80px;
 }
+
 .product-card .image {
     width: 100%;
     height: 320px;
     object-fit: contain;
 }
+
 .product-card .product-card-body {
     margin-top: 20px;
 }
+
 .product-card .product-card-body .product-card-title {
-    font-family: national-park-bold; 
-    font-size: 40px;
+    /* font-family: national-park-bold; */
+    font-size: 25px;
+    font-weight: 800;
     line-height: normal;
-    color: #000;
+    color: red;
     margin-bottom: 10px;
 }
+
 .product-card .product-card-body .product-card-text {
-    font-size: 25px; 
+    font-size: 20px;
     color: rgb(71, 71, 71);
     line-height: normal;
     margin-bottom: 0;
-    font-family: 'national-park-regular';
+    /* font-family: 'national-park-regular'; */
     overflow: hidden;
     display: -webkit-box;
-    -webkit-line-clamp: 2; /* number of lines to show */
-            line-clamp: 2; 
+    -webkit-line-clamp: 2;
+    /* number of lines to show */
+    line-clamp: 2;
     -webkit-box-orient: vertical;
 }
+
 .product-card .product-card-footer {
-    margin-top: 20px; 
-    display: flex; 
-    justify-content: space-between; 
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
 }
+
 .product-card .product-card-footer p {
-    font-size: 30px; 
-    font-family: national-park-bold, sans-serif;
-    line-height: normal;
-}
-.product-card .product-card-footer .btn {
-    font-family: 'national-park-bold';
-    background-color: #FF0000;
-    color: white;
+    font-size: 24px;
     font-weight: 800;
-    font-size: 25px;
-    border: none;
-    width: 100px;
-    height: 50px;
-    border-radius: 20px;
-}
-/* Our menu section */
-.our-menu-section {
-    margin-top: 100px;
-}
-.our-menu-section .title {
-    text-align: center;
-    margin-bottom: 60px;
-    font-family: 'national-park-bold';
-    font-size: 80px;
+    /* font-family: national-park-bold, sans-serif; */
     line-height: normal;
 }
 
+.product-card .product-card-footer .btn {
+    /* font-family: 'national-park-bold'; */
+    background-color: #FF0000;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    border: none;
+    width: 160px;
+    height: 50px;
+    border-radius: 100px;
+}
+
+/* Our menu section */
+/* .our-menu-section {
+    margin-top: 100px;
+} */
+
+.our-menu-section .title {
+    text-align: center;
+    margin-bottom: 60px;
+    /* font-family: 'national-park-bold'; */
+    font-size: 40px;
+    line-height: normal;
+    margin: 80px 0 100px 0;
+}
+
 /* location section */
+
+#location-section-container {
+    margin: 52px 0 95px 0;
+    /* background-color: black; */
+    min-height: 567px;
+    width: 100%;
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+
+#location-section-container .content {
+    padding: 60px 20px 60px 80px;
+}
+
+#location-section-container .content h1 {
+    font-family: "Montserrat", sans-serif;
+    color: red;
+    font-size: 40px;
+    text-transform: uppercase;
+    line-height: 55px;
+    font-weight: 700;
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+#location-section-container .content h4 {
+    font-family: "Montserrat", sans-serif;
+    color: red;
+    font-size: 25px;
+    line-height: 55px;
+    font-weight: 700;
+}
+
+#location-section-container .content p {
+    /* font-family: 'national-park-regular'; */
+    color: black;
+    font-size: 25px;
+    line-height: 42px;
+    text-align: left;
+    max-width: 380px;
+    margin-bottom: 50px;
+    font-style: italic;
+}
+
+#location-section-container .find-location-btn {
+    font-family: "Inter", sans-serif;
+    background-color: black;
+    color: #FEA61E;
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+    width: 170px;
+    height: 50px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#location-section-container .find-location-btn-2 {
+    font-family: "Inter", sans-serif;
+    background-color: red;
+    color: #fcbd5f;
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+    width: 170px;
+    height: 50px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 30px;
+}
+
+#location-section-container .map-container {
+    width: 100%;
+    height: 980px;
+    overflow: hidden;
+}
 
 .location-section-container {
     margin: 72px 0 95px 0;
@@ -469,22 +678,24 @@ ul li {
 .location-section-container .content h1 {
     font-family: "Montserrat", sans-serif;
     color: #FEA61E;
-    font-size: 44px;
+    font-size: 35px;
     text-transform: uppercase;
     line-height: 55px;
     font-weight: 900;
     text-align: left;
     margin-bottom: 10px;
 }
+
 .location-section-container .content p {
-    font-family: 'national-park-regular';
+    /* font-family: 'national-park-regular'; */
     color: #fff;
-    font-size: 36px;
+    font-size: 25px;
     line-height: 42px;
     text-align: left;
     max-width: 380px;
     margin-bottom: 50px;
 }
+
 .location-section-container .find-location-btn {
     font-family: "Inter", sans-serif;
     background-color: #FEA61E;
@@ -497,6 +708,7 @@ ul li {
     border-radius: 10px;
     cursor: pointer;
 }
+
 .location-section-container .map-container {
     width: 100%;
     height: 680px;
@@ -506,21 +718,21 @@ ul li {
 /* about section */
 .about-section-container h1 {
     font-family: Just Another Hand, cursive;
-    font-size: 80px; 
-    max-width: 700px; 
-    line-height: 80px; 
+    font-size: 80px;
+    max-width: 700px;
+    line-height: 80px;
     margin-bottom: 30px;
 }
 
 .about-section-container p {
-    font-family: Jura, sans-serif; 
+    /* font-family: Jura, sans-serif; */
     font-size: 20px;
 }
 
 /* footer section */
 
 .footer-section {
-    font-family: 'Jura', sans-serif;
+    /* font-family: 'Jura', sans-serif; */
     color: white;
     width: 100%;
     margin-top: 100px;
@@ -541,8 +753,8 @@ ul li {
     list-style: none;
 }
 
-.footer-section .footer-left, 
-.footer-section .footer-center, 
+.footer-section .footer-left,
+.footer-section .footer-center,
 .footer-section .footer-right {
     flex: 1;
     min-width: 250px;
@@ -550,10 +762,11 @@ ul li {
     gap: 20px;
 }
 
-.footer-section .footer-menu li, 
+.footer-section .footer-menu li,
 .footer-section .footer-contact li {
-    font-size: 22px;
+    font-size: 20px;
     line-height: 1.8;
+    /* font-weight: 800; */
 }
 
 .footer-section .footer-menu a {
@@ -624,6 +837,7 @@ ul li {
     gap: 15px;
     font-family: "Montserrat", sans-serif;
 }
+
 .footer-section .footer-bottom p a {
     cursor: pointer;
     display: inline-flex;
@@ -633,28 +847,35 @@ ul li {
 .menu-item-section {
     margin-bottom: 100px;
 }
+
 .menu-item-section .content {
     padding: 40px 80px;
 }
+
 .menu-item-section .content .title {
-    font-family: 'national-park-bold';
-    font-size: 80px;
+    /* font-family: 'national-park-bold'; */
+    font-family: 'Dancing Script', cursive;
+    font-size: 50px;
+    font-weight: 900;
     line-height: normal;
     margin-bottom: 30px;
     text-align: center;
 }
+
 .menu-item-section .content .title span {
     color: #FF0000;
 }
+
 .menu-item-section .content .sub-title {
-    font-size: 30px;
+    font-size: 24px;
     color: rgb(71, 71, 71);
     line-height: normal;
-    font-family: 'national-park-regular';
+    /* font-family: 'national-park-regular'; */
     text-align: center;
     max-width: 1028px;
     margin: 0 auto;
 }
+
 .menu-item-section .content .links-nav {
     display: flex;
     align-items: center;
@@ -667,6 +888,7 @@ ul li {
     border: none;
     flex-wrap: nowrap;
 }
+
 .menu-item-section .content .links-nav .link {
     display: flex;
     align-items: center;
@@ -674,25 +896,30 @@ ul li {
     text-align: center;
     width: 100%;
     border: none;
-    font-size: 25px;
-    font-family: 'national-park-regular';
+    font-size: 30px;
+    font-family: 'Dancing Script', cursive;
+
+    /* font-family: 'national-park-regular'; */
     line-height: normal;
     text-decoration: none;
     color: #000;
     cursor: pointer;
     border-right: 1px solid #000 !important;
-    font-weight: 600;
+    font-weight: bolder;
     padding: 0 40px;
     background-color: transparent;
     border-radius: 0;
 }
+
 .menu-item-section .content .links-nav .active {
     color: #FF0000;
 }
+
 .menu-item-section .content .links-nav .link span {
     display: block;
     width: max-content;
 }
+
 .menu-items-container {
     padding: 120px 80px 50px;
     background-image: url("./assets/images/texture-bg.png");
@@ -701,6 +928,7 @@ ul li {
     background-position: center center;
     min-height: 1670px;
 }
+
 .menu-items-container .title {
     font-size: 40px;
     color: #fff;
@@ -708,15 +936,18 @@ ul li {
     font-weight: 600;
     text-align: center;
 }
+
 .menu-product-card {
     margin-bottom: 100px;
 }
+
 .menu-product-card .menu-product-card-image {
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
 }
+
 .menu-product-card .menu-product-card-image .image {
     width: 100%;
     position: relative;
@@ -724,6 +955,7 @@ ul li {
     height: 285px;
     object-fit: contain;
 }
+
 .menu-product-card .menu-product-card-image span {
     position: absolute;
     width: 80vw;
@@ -734,17 +966,20 @@ ul li {
     border-radius: 50%;
     z-index: 0;
 }
+
 .menu-product-card .menu-product-card-body {
-    margin-top: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     margin-bottom: 20px;
-    padding: 0 30px;
+    padding: 0;
+    max-width: 80%;
+    margin: 60px auto 20px;
 }
+
 .menu-product-card .menu-product-card-body .menu-product-card-title {
-    font-family: "Inter", sans-serif;
+    /* font-family: "Inter", sans-serif;     */
     font-size: 28px;
     line-height: 40px;
     color: #FCED23;
@@ -755,18 +990,21 @@ ul li {
     letter-spacing: 1px;
     min-height: 80px;
 }
+
 .menu-product-card .menu-product-card-body .menu-product-card-text {
-    font-family: 'national-park-regular';
+    /* font-family: 'national-park-regular'; */
     font-size: 26px;
     line-height: 32px;
     color: #fff;
     text-align: center;
     margin-bottom: 0;
-    min-height: 64px;
+    min-height: 104px;
 }
+
 .menu-product-card .menu-product-card-footer {
     padding: 0 30px;
 }
+
 .menu-product-card .menu-product-card-footer .menu-product-card-price {
     font-family: "Inter", sans-serif;
     font-size: 30px;
@@ -777,6 +1015,7 @@ ul li {
     font-weight: 700;
     text-align: center;
 }
+
 .menu-product-card .menu-product-card-footer .menu-product-card-order-btn {
     font-family: "Inter", sans-serif;
     background-color: #FF0000;
@@ -787,111 +1026,148 @@ ul li {
     font-size: 20px;
     padding: 0 30px;
     height: 55px;
-    border-radius: 0;
     margin-top: 15px;
     width: calc(100% - 120px);
     margin: 0 60px;
-    border-radius: 5px;
+    border-radius: 100px;
 }
 
 /* font-family: "Just Another Hand", cursive; */
 /* font-family: "Jura", sans-serif; */
 
 /* Responsive Styles */
-@media screen and (min-device-width: 1200px) and (max-device-width: 1370px) { 
+@media screen and (min-device-width: 1200px) and (max-device-width: 1370px) {
     .menu-product-card .menu-product-card-body {
         padding: 0;
+        max-width: 100%;
     }
+
     .menu-product-card .menu-product-card-footer {
         padding: 0;
     }
+
     .menu-product-card .menu-product-card-footer .menu-product-card-order-btn {
         width: calc(100% - 80px);
         margin: 0 40px;
     }
 }
+
 @media (max-width: 1055px) {
     .footer-section .footer-mockup {
         margin-top: -30px;
     }
+
     .footer-section .footer-1 ul {
         margin: 0;
     }
+
     .footer-section .footer-left {
         gap: 40px;
     }
+
     .footer-section .footer-mockup img {
         padding-left: 0;
     }
 }
+
 @media (max-width: 992px) {
     .navbar-section {
         padding: 0 40px 40px 40px;
     }
+
     .navbar-section nav ul.links li a {
         font-size: 24px;
     }
+
+    .navbar-section nav ul.links {
+        gap: 30px;
+    }
+
     .container-fluid {
         padding: 0 40px;
     }
+
     .popular-items-container {
         padding: 50px 40px;
     }
+
     .navbar-section nav .nav-buttons .change-location-btn {
         padding: 0 20px;
-        height: 50px;
+        height: 45px;
     }
-    .footer-section .footer-left, .footer-center, .footer-right {
+
+    .footer-section .footer-left,
+    .footer-center,
+    .footer-right {
         flex: 0 0 45%;
     }
+
     .location-section-container .content {
         padding: 70px 40px;
     }
+
     .menu-item-section .content {
         padding: 40px 40px;
     }
+
     .menu-item-section .menu-items-container {
         padding: 100px 40px 0x;
     }
+
     .menu-product-card .menu-product-card-body {
         padding: 0;
+        max-width: 100%;
     }
+
     .menu-product-card .menu-product-card-footer {
         padding: 0;
     }
+
     .menu-product-card .menu-product-card-footer .menu-product-card-order-btn {
         width: calc(100% - 80px);
         margin: 0 40px;
     }
 }
+
 @media (max-width: 768px) {
     .navbar-section {
         padding: 0 20px 20px 20px;
     }
 
     .navbar-section nav ul.links {
-        display: none; /* Hide links on mobile */
+        display: none;
+        /* Hide links on mobile */
+    }
+
+    .navbar-section nav .home-link .logo {
+        width: 70px;
     }
 
     .navbar-section nav .nav-buttons .menu-icon {
-        display: block; /* Show menu icon on mobile */
+        display: block;
+        /* Show menu icon on mobile */
     }
 
     .navbar-section nav .nav-buttons {
-        gap: 10px; /* Reduce gap between buttons on mobile */
+        gap: 10px;
+        /* Reduce gap between buttons on mobile */
     }
 
     .navbar-section nav .nav-buttons .change-location-btn {
-        font-size: 14px; /* Adjust button text size */
-        height: 50px;
-        padding: 0 30px;
+        font-size: 12px;
+        /* Adjust button text size */
+        height: 40px;
+        padding: 0 20px;
     }
+
+    .navbar-section nav .nav-buttons .change-location-btn img {
+        width: 15px;
+    }
+
     .primary-btn {
         font-size: 14px;
     }
-    .navbar-section nav .nav-buttons .change-location-btn img {
-        width: 20px;
-    }
+
     .hero-section {
         padding: 40px;
         justify-content: center;
@@ -899,245 +1175,327 @@ ul li {
         border-end-start-radius: 30px;
         border-end-end-radius: 30px;
     }
+
     .hero-section .hero-inner-section img {
         max-width: 180px;
     }
+
     .hero-section .hero-inner-section :nth-child(2) {
         font-size: 90px;
     }
+
     .hero-section .hero-inner-section :nth-child(3) {
         font-size: 34px;
         margin-top: -15px;
     }
+
     .search-bar-container {
         padding: 0 30px 0 30px;
     }
+
     .popular-items-container {
         padding: 50px 30px 50px 30px;
         text-align: center;
     }
+
     .container-fluid {
         padding: 0 30px;
     }
+
     .our-menu-section .title {
         font-size: 55px;
     }
+
     .product-card {
         padding: 20px;
     }
+
     .product-card .icon {
         width: 60px;
         right: -16px;
         top: -16px;
     }
+
     .product-card .image {
         min-height: 200px;
         object-fit: contain;
     }
+
     .product-card .product-card-body .product-card-title {
         font-size: 26px;
     }
+
     .product-card .product-card-body .product-card-text {
         font-size: 22px;
     }
+
     .product-card .product-card-footer p {
         font-size: 26px;
     }
+
     .product-card .product-card-footer .btn {
         font-size: 16px;
         height: 40px;
-        width: 80px ;
+        width: 80px;
     }
-    .about-section-container h1  {
+
+    .about-section-container h1 {
         font-size: 52px;
         line-height: 57px;
         margin-bottom: 10px;
     }
+
     .about-section-container p {
         font-size: 20px;
     }
+
     .about-section-container .img-fluid {
         margin-top: 20px;
     }
+
     .footer-section .footer-1 {
         flex-direction: column;
         padding: 50px 20px;
     }
+
     .footer-section .footer-1 ul {
         padding-left: 0;
     }
-    .footer-section .footer-1 > div .img-fluid {
+
+    .footer-section .footer-1>div .img-fluid {
         display: none;
     }
+
     .every-bite-section {
         padding: 50px 30px;
         justify-content: center;
         min-height: 400px;
     }
+
     .every-bite-section .content h4 {
         font-size: 50px;
         text-align: center;
     }
+
     .every-bite-section .content h1 {
         font-size: 60px;
         text-align: center;
         line-height: 65px;
     }
+
     .location-section-container {
         min-height: auto;
     }
+
     .location-section-container .content {
         padding: 70px 30px;
     }
+
     .location-section-container .content h1 {
         font-size: 34px;
         line-height: 40px;
     }
+
     .location-section-container .content p {
         font-size: 24px;
         line-height: 30px;
         margin-bottom: 30px;
     }
+
     .location-section-container .map-container {
         margin-top: 30px;
         height: 400px;
     }
+
     .footer-section .footer-1 {
         flex-direction: column;
         gap: 30px;
     }
-    
+
     .footer-section .footer-mockup {
         display: none;
     }
-    .footer-section .footer-menu li, 
+
+    .footer-section .footer-menu li,
     .footer-section .footer-contact li {
         font-size: 18px;
     }
-    
+
     .footer-section .app-section h3 {
         font-size: 22px;
     }
-    
+
     .footer-section .app-section p {
         font-size: 16px;
     }
-    
+
     .footer-section .footer-bottom {
         flex-direction: column;
         text-align: center;
         gap: 10px;
     }
-    .footer-section .footer-left, .footer-center, .footer-right {
+
+    .footer-section .footer-left,
+    .footer-center,
+    .footer-right {
         flex-direction: column;
         gap: 30px;
     }
+
     .footer-section .footer-bottom {
         font-size: 16px;
     }
+
     .menu-item-section .content {
         padding: 40px 30px;
     }
+
     .menu-item-section .menu-items-container {
         padding: 100px 30px 0;
     }
+
     .menu-item-section .content .title {
         font-size: 55px;
         line-height: 60px;
     }
+
     .menu-item-section .content .sub-title {
         font-size: 24px;
     }
+
     .menu-item-section .content .links-nav .link {
         padding: 0 20px;
         font-size: 22px;
     }
+
     .menu-product-card .menu-product-card-body {
-        padding: 0 20px;
+        padding: 0;
+        max-width: 80%;
     }
+
     .menu-product-card .menu-product-card-footer {
         padding: 0 20px;
     }
+
     .menu-product-card .menu-product-card-footer .menu-product-card-order-btn {
         width: calc(100% - 120px);
         margin: 0 60px;
     }
 }
+
 @media (max-width: 500px) {
     .primary-btn {
         font-size: 12px;
         height: 40px;
     }
+
     .navbar-section nav .logo {
         width: 65px;
     }
-    .navbar-section nav .nav-buttons  .change-location-btn {
-        font-size: 11px; /* Adjust button text size */
-        height: 36px;
-        padding: 0 20px;
+
+    .navbar-section nav .nav-buttons .change-location-btn {
+        font-size: 10px;
+        /* Adjust button text size */
+        height: 34px;
+        padding: 0 12px;
     }
-    .navbar-section nav .nav-buttons  .change-location-btn img {
+
+    .navbar-section nav .nav-buttons .change-location-btn img {
         width: 10px;
     }
+
+    .navbar-section nav .bucket-btn p {
+        top: -3px;
+        left: -3px;
+    }
+
+    .navbar-section nav .bucket-btn {
+        width: 35px;
+        height: 35px;
+    }
+
+    .navbar-section nav .home-link .logo {
+        width: 60px;
+    }
+
     .hero-section {
         padding: 20px;
     }
+
     .hero-section .hero-inner-section img {
         max-width: 180px;
     }
+
     .hero-section .hero-inner-section :nth-child(2) {
         font-size: 70px;
     }
+
     .hero-section .hero-inner-section :nth-child(3) {
         font-size: 28px;
         margin-top: -10px;
     }
+
     .slider-container {
         margin: 0 20px;
     }
+
     .search-bar-container {
         padding: 0 20px 0 20px;
     }
+
     .popular-items-container {
         padding: 50px 20px 50px 20px;
         text-align: center;
     }
+
     .container-fluid {
         padding: 0 20px;
     }
+
     .every-bite-section {
         min-height: 300px;
     }
+
     .every-bite-section .content h4 {
         font-size: 30px;
         text-align: center;
     }
+
     .every-bite-section .content h1 {
         font-size: 40px;
         text-align: center;
         line-height: 45px;
     }
+
     .location-section-container {
         min-height: auto;
     }
+
     .location-section-container .content {
         padding: 70px 20px 20px;
     }
+
     .footer-section .app-buttons img {
         max-width: 150px;
     }
+
     .menu-item-section .content {
         padding: 40px 20px;
     }
+
     .menu-item-section .menu-items-container {
         padding: 100px 20px 0;
     }
+
     .menu-product-card .menu-product-card-body {
         padding: 0;
+        max-width: 100%;
     }
+
     .menu-product-card .menu-product-card-footer {
         padding: 0;
     }
+
     .menu-product-card .menu-product-card-footer .menu-product-card-order-btn {
         width: calc(100% - 80px);
         margin: 0 40px;

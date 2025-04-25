@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Texas Crispy Chicken</title>
+    <link rel="icon" href="assets/images/logo.svg" type="image/x-icon" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <!-- Slick Carousel CSS -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caprasimo&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://db.onlinewebfonts.com/c/9a835ecd5504d7ec84ad5fa704987c94?family=National+2+Bold"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Just+Another+Hand&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Montserrat:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Navbar section -->
+    <div class="navbar-image">
+      <img width="100%" src="assets/images/navbar-upper.png" alt="" />
+    </div>
+
+    <div class="navbar-section">
+      <nav>
+        <a href="./index.html" class="home-link"
+          ><img
+            src="assets/images/logo.png"
+            width="100"
+            alt="Logo"
+            class="logo"
+        /></a>
+        <ul class="links">
+          <li><a href="./menu.html">Menu</a></li>
+          <li><a href="#">Offers</a></li>
+          <li><a href="./location.html">Locations</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="nav-buttons">
+          <button class="change-location-btn">
+            <img width="20" src="assets/icons/location.svg" alt="" />
+            Change location
+          </button>
+          <p style="font-weight: 700">(903) 740-1844</p>
+          <button class="change-location-btn">Order now</button>
+          <button class="bucket-btn">
+            <img src="./assets/icons/chicken-bucket-icon.png" alt="" />
+            <p>0</p>
+          </button>
+          <img
+            class="menu-icon"
+            src="assets/icons/menu-icon.png"
+            alt=""
+            onclick="openNav()"
+          />
+        </div>
+      </nav>
+    </div>
+
+    <!-- Mobile version -->
+
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <a href="./menu.html" style="font-family: 'national-park-meduim'">Menu</a>
+      <a href="#" style="font-family: 'national-park-meduim'">Rewards</a>
+      <a href="#" style="font-family: 'national-park-meduim'">Offers</a>
+      <a href="#" style="font-family: 'national-park-meduim'">Locations</a>
+    </div>
+
+    <!-- Hero section -->
+
+    <div style="background-image: url('assets/images/location-banner.png'); height: 80vh; background-size: cover;"></div>
+
+    <!-- <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="hero-section home-slide-1">
+                <div class="hero-inner-section">
+                    <img src="assets/images/logo2.svg" alt="">
+                    <p>TEXAS</p>
+                    <p>CRISPY CHICKEN</p>
+                </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="hero-section home-slide-2">
+                <div class="hero-inner-section">
+                    <img src="assets/images/logo2.svg" alt="">
+                    <p>TEXAS</p>
+                    <p>CRISPY CHICKEN</p>
+                </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="hero-section home-slide-3">
+                <div class="hero-inner-section">
+                    <img src="assets/images/logo2.svg" alt="">
+                    <p>TEXAS</p>
+                    <p>CRISPY CHICKEN</p>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div> -->
+
+    <!-- Location section -->
+
+    <div id="location-section-container">
+      <div class="row w-100 align-items-center">
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 content">
+          <h1>
+            Pick Up From Our Location   
+          </h1> 
+          <p>
+            Texas Chicken™ has <span style="color: red; font-weight: 700;">2</span> locations in <span style="color: red; font-weight: 700;">Texas!</span> Check out <span style="color: red; font-weight: 700;">Texas Crispy Chicken™</span> locations and find the nearest <span style="color: red; font-weight: 700;">Texas Crispy Chicken™</span> restaurant now™
+          </p>
+          <hr style="margin: 40px 0;">
+          <h4>
+            Location-1   
+          </h4> 
+          <p style="max-width: 100%;">Suit #2, 3001 Estes Pkwy Longview, TX75602 USA</p>
+          <hr style="margin: 40px 0;">
+          <h4>
+            Location-2
+          </h4> 
+          <p style="max-width: 100%;">16117 State Hwy 64, Tyler, TX 75707</p>
+          <button class="find-location-btn">Locations</button> 
+          <a href="menu.html">
+              <button class="find-location-btn-2">Menu</button> 
+            </a>
+        </div>
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 p-0">
+          <div class="map-container">
+            <iframe
+              width="100%"
+              height="100%"
+              frameborder="0"
+              style="border: 0"
+              allowfullscreen
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3477.895842884079!2d-94.725123!3d32.45104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzLCsDI3JzAzLjciTiA5NMKwNDMnMzAuNCJX!5e0!3m2!1sen!2sus!4v1699644552506"
+            >
+            </iframe>
+          </div>
+          <!-- <img src="https://static.vecteezy.com/system/resources/previews/020/833/849/non_2x/world-map-with-country-names-free-vector.jpg" alt=""> -->
+        </div>
+      </div>
+    </div>
+
+    <!-- About Section -->
+
+    <div class="about-section-container">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-6 col-md-12 col-sm-12">
+            <h1>
+              Texas Crispy Chicken – Redefining the fast-food experience with
+              its exceptionalfried chicken
+            </h1>
+            <p>
+              This haven for fried chicken enthusiasts serves up an array of
+              tantalizing options, featuring a menu that boasts the crispiest
+              and most flavorful chicken in the city. At Texas Crispy Chicken,
+              each dish is a masterpiece, from the classic Crispy Chicken to the
+              ever-popular Crispy Zenga Burger.
+            </p>
+            <br />
+            <p>
+              Our Kababjees Fried Chicken menu is carefully curated to ensure
+              every bite is a delightful experience. Whether you're craving
+              Crispy Chicken Wings or the best fried chicken in Texas, our menu
+              is designed to cater to all tastes. What sets us apart is our
+              dedication to quality and flavor, making us a standout choice for
+              fried chicken in Texas.
+            </p>
+            <br />
+            <p>
+              Convenience is a key in today's fast-paced world. Texas Crispy
+              Chicken delivery is swift and reliable, ensuring that your meal
+              arrives hot, fresh, and ready to delight your taste buds. With
+              exciting fried chicken deals, we offer great value, making our
+              mouth-watering chicken accessible to everyone.
+            </p>
+            <br />
+            <p>
+              At Texas Crispy Chicken, we're committed to offering the most
+              delicious crispy fried chicken that Texas loves. So what are you
+              waiting for? ORDER NOW and enjoy the best fried chicken in the
+              city.
+            </p>
+          </div>
+          <div
+            class="col-lg-6 col-md-12 col-sm-12"
+            style="display: flex; justify-content: center; align-items: center"
+          >
+            <img
+              width="600"
+              src="assets/images/chiken.png"
+              alt=""
+              class="img-fluid"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+
+    <section class="footer-section">
+      <div class="footer-1">
+        <div class="footer-left">
+          <div>
+            <img src="assets/images/logo.png" alt="Logo" />
+          </div>
+          <ul class="footer-menu">
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">OFFERS</a></li>
+            <br />
+            <br />
+            <br />
+            <li><a href="#">Locations</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-center">
+          <ul class="footer-contact">
+            <li>Contact US</li>
+            <li>(903) 740-1464</li>
+            <li>texascrispychicken@gmail.com</li>
+            <li style="margin-top: 35px">
+              Suit #2, 3001 Estes Pkwy Longview, TX75602 USA
+              <br />
+              <br />
+              16117 State Hwy 64, Tyler, TX 75707
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-mockup">
+          <img
+            src="assets/images/mockup.png"
+            alt="App Mockup"
+            class="mockup-img"
+          />
+        </div>
+        <div class="footer-right">
+          <div class="app-section">
+            <h3>Get The App</h3>
+            <p>App is where the fun is! It'sEasy, Fast and Convenient.</p>
+            <div class="app-buttons">
+              <img
+                src="assets/images/app-store.png"
+                alt="Download on App Store"
+              />
+              <img
+                src="assets/images/google-play.png"
+                alt="Get it on Google Play"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-2">
+        <div class="footer-bottom">
+          <p>® 2025 Texas Crispy Chicken</p>
+          <p><a>Privacy Policy</a></p>
+          <p>Do Not Sell or Share My Personal Information</p>
+          <p><a>Terms of Use</a></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bootstrap JS (optional for interactive components) -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-rZ6TepNbjSXXxmN1xg8l4r4KRtKpD6B6Mq/NFU3v3N6wH0j5FNA6Dkh6Ij0UnRfz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- jQuery (required for Slick Carousel) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+    <!-- Slick Carousel Initialization -->
+    <script>
+      $(document).ready(function () {
+        $(".slider").slick({
+          dots: false,
+          infinite: true,
+          speed: 500,
+          slidesToShow: 8,
+          slidesToScroll: 8,
+          autoplay: true,
+          autoplaySpeed: 3000,
+          responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                infinite: true,
+                dots: true,
+              },
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+                initialSlide: 2,
+              },
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+              },
+            },
+          ],
+        });
+      });
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+      }
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+    </script>
+
+    <!-- Other JS work code -->
+    <script>
+      // Links Active
+      document.addEventListener("DOMContentLoaded", function () {
+        const currentPath = window.location.pathname.split("/").pop(); // e.g. menu.html
+        const links = document.querySelectorAll(".links a");
+
+        links.forEach((link) => {
+          const href = link.getAttribute("href");
+          const fileName = href.split("/").pop(); // strip ./ if present
+          if (fileName === currentPath) {
+            link.parentElement.classList.add("active");
+          }
+        });
+      });
+      // Add 4 Product Card Script
+      document
+        .getElementById("load-more")
+        .addEventListener("click", function () {
+          let container = document.getElementById("product-container");
+          let button = document.getElementById("load-more");
+
+          for (let i = 0; i < 4; i++) {
+            let newCard = document.createElement("div");
+            newCard.className =
+              "col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12 mb-4 px-xs-0";
+            newCard.innerHTML = `
+                    <div class="product-card">
+                        <img src="assets/images/menu.png" alt="" class="image">
+                        <div class="product-card-body">
+                            <h5 class="product-card-title">Legs Quarte</h5>
+                            <p class="product-card-text">2 Pcs Crispy Chicken Leg & Dip.</p>
+                        </div>
+                    </div>
+                `;
+            container.appendChild(newCard);
+          }
+
+          // Load More Button ko Hide kar dein
+          button.style.display = "none";
+        });
+    </script>
+  </body>
+</html>
