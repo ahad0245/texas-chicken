@@ -1,435 +1,1102 @@
 <!DOCTYPE html>
 <html lang="en">
+  <!--<< Header Area >>-->
+
   <head>
+    <!-- ========== Meta Tags ========== -->
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="modinatheme" />
+    <meta name="description" content="Texas Crispy Chicken" />
+    <!-- ======== Page title ============ -->
     <title>Texas Crispy Chicken</title>
-    <link rel="icon" href="assets/images/logo.svg" type="image/x-icon" />
-
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-
-    <!-- Slick Carousel CSS -->
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Caprasimo&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-
-    <link
-      href="https://db.onlinewebfonts.com/c/9a835ecd5504d7ec84ad5fa704987c94?family=National+2+Bold"
-      rel="stylesheet"
-    />
-
-    <link
-      href="https://fonts.googleapis.com/css2?family=Just+Another+Hand&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Montserrat:wght@700&display=swap"
-      rel="stylesheet"
-    />
-
+    <!--<< Favcion >>-->
+    <link rel="shortcut icon" href="assets/img/logo.png" />
+    <!--<< Bootstrap min.css >>-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <!--<< Font Awesome.css >>-->
+    <link rel="stylesheet" href="assets/css/font-awesome.css" />
+    <!--<< Animate.css >>-->
+    <link rel="stylesheet" href="assets/css/animate.css" />
+    <!--<< Magnific Popup.css >>-->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css" />
+    <!--<< MeanMenu.css >>-->
+    <link rel="stylesheet" href="assets/css/meanmenu.css" />
+    <!--<< Swiper Bundle.css >>-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+    <!--<< Nice Select.css >>-->
+    <link rel="stylesheet" href="assets/css/nice-select.css" />
+    <!--<< Main.css >>-->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <!--<< Style.css >>-->
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
-    <!-- Navbar section -->
-    <div class="navbar-image">
-      <img width="100%" src="assets/images/navbar-upper.png" alt="" />
-    </div>
-
-    <div class="navbar-section">
-      <nav>
-        <a href="./index.html" class="home-link"
-          ><img
-            src="assets/images/logo.png"
-            width="100"
-            alt="Logo"
-            class="logo"
-        /></a>
-        <ul class="links">
-          <li><a href="./menu.html">Menu</a></li>
-          <li><a href="#">Offers</a></li>
-          <li><a href="./location.html">Locations</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-        <div class="nav-buttons">
-          <button class="change-location-btn">
-            <img width="20" src="assets/icons/location.svg" alt="" />
-            Change location
-          </button>
-          <!-- <p style="font-weight: 700">(903) 740-1844</p>
-          <button class="change-location-btn">Order now</button> -->
-          <button class="bucket-btn">
-            <img src="./assets/icons/chicken-bucket-icon.png" alt="" />
-            <p>0</p>
-          </button>
-          <img
-            class="menu-icon"
-            src="assets/icons/menu-icon.png"
-            alt=""
-            onclick="openNav()"
-          />
-        </div>
-      </nav>
-    </div>
-
-    <!-- Mobile version -->
-
-    <div id="mySidenav" class="sidenav">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
-        >&times;</a
-      >
-      <a href="./menu.html" style="font-family: 'national-park-meduim'">Menu</a>
-      <a href="#" style="font-family: 'national-park-meduim'">Rewards</a>
-      <a href="#" style="font-family: 'national-park-meduim'">Offers</a>
-      <a href="#" style="font-family: 'national-park-meduim'">Locations</a>
-    </div>
-
-    <!-- Hero section -->
-
-    <div style="background-image: url('assets/images/location-banner.png'); height: 80vh; background-size: cover;"></div>
-
-    <!-- <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="hero-section home-slide-1">
-                <div class="hero-inner-section">
-                    <img src="assets/images/logo2.svg" alt="">
-                    <p>TEXAS</p>
-                    <p>CRISPY CHICKEN</p>
-                </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="hero-section home-slide-2">
-                <div class="hero-inner-section">
-                    <img src="assets/images/logo2.svg" alt="">
-                    <p>TEXAS</p>
-                    <p>CRISPY CHICKEN</p>
-                </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="hero-section home-slide-3">
-                <div class="hero-inner-section">
-                    <img src="assets/images/logo2.svg" alt="">
-                    <p>TEXAS</p>
-                    <p>CRISPY CHICKEN</p>
-                </div>
-            </div>
-          </div>
-        </div>
-    </div> -->
-
-    <!-- Location section -->
-
-    <div id="location-section-container">
-      <div class="row w-100 align-items-center">
-        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 content">
-          <h1>
-            Pick Up From Our Location   
-          </h1> 
-          <p>
-            Texas Chicken™ has <span style="color: red; font-weight: 700;">2</span> locations in <span style="color: red; font-weight: 700;">Texas!</span> Check out <span style="color: red; font-weight: 700;">Texas Crispy Chicken™</span> locations and find the nearest <span style="color: red; font-weight: 700;">Texas Crispy Chicken™</span> restaurant now™
-          </p>
-          <hr style="margin: 40px 0;">
-          <h4>
-            Location-1   
-          </h4> 
-          <p style="max-width: 100%;">Suit #2, 3001 Estes Pkwy Longview, TX75602 USA</p>
-          <hr style="margin: 40px 0;">
-          <h4>
-            Location-2
-          </h4> 
-          <p style="max-width: 100%;">16117 State Hwy 64, Tyler, TX 75707</p>
-          <button class="find-location-btn">Locations</button> 
-          <a href="menu.html">
-              <button class="find-location-btn-2">Menu</button> 
-            </a>
-        </div>
-        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 p-0">
-          <div class="map-container">
-            <iframe
-              width="100%"
-              height="100%"
-              frameborder="0"
-              style="border: 0"
-              allowfullscreen
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3477.895842884079!2d-94.725123!3d32.45104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzLCsDI3JzAzLjciTiA5NMKwNDMnMzAuNCJX!5e0!3m2!1sen!2sus!4v1699644552506"
+    <!-- Offcanvas Area Start -->
+    <div class="fix-area">
+      <div class="offcanvas__info">
+        <div class="offcanvas__wrapper">
+          <div class="offcanvas__content">
+            <div
+              class="offcanvas__top mb-5 d-flex justify-content-between align-items-center"
             >
-            </iframe>
-          </div>
-          <!-- <img src="https://static.vecteezy.com/system/resources/previews/020/833/849/non_2x/world-map-with-country-names-free-vector.jpg" alt=""> -->
-        </div>
-      </div>
-    </div>
-
-    <!-- About Section -->
-
-    <div class="about-section-container">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-lg-6 col-md-12 col-sm-12">
-            <h1>
-              Texas Crispy Chicken – Redefining the fast-food experience with
-              its exceptionalfried chicken
-            </h1>
-            <p>
-              This haven for fried chicken enthusiasts serves up an array of
-              tantalizing options, featuring a menu that boasts the crispiest
-              and most flavorful chicken in the city. At Texas Crispy Chicken,
-              each dish is a masterpiece, from the classic Crispy Chicken to the
-              ever-popular Crispy Zenga Burger.
+              <div class="offcanvas__logo">
+                <a href="index.html">
+                  <img style="width: 100px;" src="assets/img/logo.png" alt="logo-img" />
+                </a>
+              </div>
+              <div class="offcanvas__close">
+                <button>
+                  <i class="fas fa-times"></i>
+                </button>
+              </div>
+            </div>
+            <p class="text d-none d-lg-block">
+              This involves interactions between a business and its customers.
+              It's about meeting customers' needs and resolving their problems.
+              Effective customer service is crucial.
             </p>
-            <br />
-            <p>
-              Our Kababjees Fried Chicken menu is carefully curated to ensure
-              every bite is a delightful experience. Whether you're craving
-              Crispy Chicken Wings or the best fried chicken in Texas, our menu
-              is designed to cater to all tastes. What sets us apart is our
-              dedication to quality and flavor, making us a standout choice for
-              fried chicken in Texas.
-            </p>
-            <br />
-            <p>
-              Convenience is a key in today's fast-paced world. Texas Crispy
-              Chicken delivery is swift and reliable, ensuring that your meal
-              arrives hot, fresh, and ready to delight your taste buds. With
-              exciting fried chicken deals, we offer great value, making our
-              mouth-watering chicken accessible to everyone.
-            </p>
-            <br />
-            <p>
-              At Texas Crispy Chicken, we're committed to offering the most
-              delicious crispy fried chicken that Texas loves. So what are you
-              waiting for? ORDER NOW and enjoy the best fried chicken in the
-              city.
-            </p>
-          </div>
-          <div
-            class="col-lg-6 col-md-12 col-sm-12"
-            style="display: flex; justify-content: center; align-items: center"
-          >
-            <img
-              width="600"
-              src="assets/images/chiken.png"
-              alt=""
-              class="img-fluid"
-            />
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Footer Section -->
-
-    <section class="footer-section">
-      <div class="footer-1">
-        <div class="footer-left">
-          <div>
-            <img src="assets/images/logo.png" alt="Logo" />
-          </div>
-          <ul class="footer-menu">
-            <li><a href="#">Menu</a></li>
-            <li><a href="#">OFFERS</a></li>
-            <br />
-            <br />
-            <br />
-            <li><a href="#">Locations</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-center">
-          <ul class="footer-contact">
-            <li>Contact US</li>
-            <li>(903) 740-1464</li>
-            <li>texascrispychicken@gmail.com</li>
-            <li style="margin-top: 35px">
-              Suit #2, 3001 Estes Pkwy Longview, TX75602 USA
-              <br />
-              <br />
-              16117 State Hwy 64, Tyler, TX 75707
-            </li>
-          </ul>
-        </div>
-
-        <div class="footer-mockup">
-          <img
-            src="assets/images/mockup.png"
-            alt="App Mockup"
-            class="mockup-img"
-          />
-        </div>
-        <div class="footer-right">
-          <div class="app-section">
-            <h3>Get The App</h3>
-            <p>App is where the fun is! It'sEasy, Fast and Convenient.</p>
-            <div class="app-buttons">
-              <img
-                src="assets/images/app-store.png"
-                alt="Download on App Store"
-              />
-              <img
-                src="assets/images/google-play.png"
-                alt="Get it on Google Play"
-              />
+            <div class="offcanvas-gallery-area d-none d-lg-block">
+              <div class="offcanvas-gallery-items">
+                <a
+                  href="assets/img/header/01.jpg"
+                  class="offcanvas-image img-popup"
+                >
+                  <img src="assets/img/header/01.jpg" alt="gallery-img" />
+                </a>
+                <a
+                  href="assets/img/header/02.jpg"
+                  class="offcanvas-image img-popup"
+                >
+                  <img src="assets/img/header/02.jpg" alt="gallery-img" />
+                </a>
+                <a
+                  href="assets/img/header/03.jpg"
+                  class="offcanvas-image img-popup"
+                >
+                  <img src="assets/img/header/03.jpg" alt="gallery-img" />
+                </a>
+              </div>
+              <div class="offcanvas-gallery-items">
+                <a
+                  href="assets/img/header/04.jpg"
+                  class="offcanvas-image img-popup"
+                >
+                  <img src="assets/img/header/04.jpg" alt="gallery-img" />
+                </a>
+                <a
+                  href="assets/img/header/05.jpg"
+                  class="offcanvas-image img-popup"
+                >
+                  <img src="assets/img/header/05.jpg" alt="gallery-img" />
+                </a>
+                <a
+                  href="assets/img/header/06.jpg"
+                  class="offcanvas-image img-popup"
+                >
+                  <img src="assets/img/header/06.jpg" alt="gallery-img" />
+                </a>
+              </div>
+            </div>
+            <div class="mobile-menu fix mb-3"></div>
+            <div class="offcanvas__contact">
+              <h4>Contact Info</h4>
+              <ul>
+                <li class="d-flex align-items-center">
+                  <div class="offcanvas__contact-icon">
+                    <i class="fal fa-map-marker-alt"></i>
+                  </div>
+                  <div class="offcanvas__contact-text">
+                    <a target="_blank" href="#"
+                      >Main Street, Melbourne, Australia</a
+                    >
+                  </div>
+                </li>
+                <li class="d-flex align-items-center">
+                  <div class="offcanvas__contact-icon mr-15">
+                    <i class="fal fa-envelope"></i>
+                  </div>
+                  <div class="offcanvas__contact-text">
+                    <a href="tel:+013-003-003-9993"
+                      ><span class="mailto:info@enofik.com"
+                        ><span
+                          class="__cf_email__"
+                          data-cfemail="147d7a727b54727b7b707f7d7a733a777b79"
+                          >[email&#160;protected]</span
+                        ></span
+                      ></a
+                    >
+                  </div>
+                </li>
+                <li class="d-flex align-items-center">
+                  <div class="offcanvas__contact-icon mr-15">
+                    <i class="fal fa-clock"></i>
+                  </div>
+                  <div class="offcanvas__contact-text">
+                    <a target="_blank" href="#">Mod-friday, 09am -05pm</a>
+                  </div>
+                </li>
+                <li class="d-flex align-items-center">
+                  <div class="offcanvas__contact-icon mr-15">
+                    <i class="far fa-phone"></i>
+                  </div>
+                  <div class="offcanvas__contact-text">
+                    <a href="tel:+11002345909">+11002345909</a>
+                  </div>
+                </li>
+              </ul>
+              <div class="header-button mt-4">
+                <a href="#" class="theme-btn">
+                  <span
+                    class="button-content-wrapper d-flex align-items-center justify-content-center"
+                  >
+                    <span class="button-icon"
+                      ><i class="flaticon-delivery"></i
+                    ></span>
+                    <span class="button-text">order now</span>
+                  </span>
+                </a>
+              </div>
+              <div class="social-icon d-flex align-items-center">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
             </div>
           </div>
         </div>
       </div>
+    </div>
+    <div class="offcanvas__overlay"></div>
 
-      <div class="footer-2">
-        <div class="footer-bottom">
-          <p>® 2025 Texas Crispy Chicken</p>
-          <p><a>Privacy Policy</a></p>
-          <p>Do Not Sell or Share My Personal Information</p>
-          <p><a>Terms of Use</a></p>
+    <!-- Header Area Start -->
+    <header>
+      <!-- <div class="header-top">
+      <div class="container">
+        <div class="header-top-wrapper">
+          <ul>
+            <li>
+              <span>100%</span> Secure delivery without contacting the courier
+            </li>
+            <li><i class="fas fa-truck"></i>Track Your Order</li>
+          </ul>
+          <div class="top-right">
+            <div class="search-wrp">
+              <button><i class="far fa-search"></i></button>
+              <input placeholder="Search" aria-label="Search" />
+            </div>
+            <div class="social-icon d-flex align-items-center">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-vimeo-v"></i></a>
+              <a href="#"><i class="fab fa-pinterest-p"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+      <div id="header-sticky" class="header-1">
+        <div class="container">
+          <div class="mega-menu-wrapper">
+            <div class="header-main">
+              <div class="logo">
+                <a href="index.html" class="header-logo">
+                  <img width="80px" src="assets/img/logo.png" alt="logo-img" />
+                </a>
+              </div>
+              <div class="header-left">
+                <div class="mean__menu-wrapper d-none d-lg-block">
+                  <div class="main-menu">
+                    <nav id="mobile-menu">
+                      <ul>
+                        <li class="has-dropdown active">
+                          <a href="food-menu-2.html">
+                            Menu
+                            <!-- <i class="fas fa-angle-down"></i> -->
+                          </a>
+                          <!-- <ul class="submenu has-homemenu">
+                          <li class="border-none">
+                            <div class="row g-4">
+                              <div class="col-lg-4 homemenu">
+                                <div class="homemenu-thumb">
+                                  <img
+                                    src="assets/img/header/home-1.jpg"
+                                    alt="img"
+                                  />
+                                  <div class="demo-button">
+                                    <a href="index-2.html" class="theme-btn"
+                                      >View Demo</a
+                                    >
+                                  </div>
+                                </div>
+                                <div class="homemenu-content text-center">
+                                  <h4 class="homemenu-title">
+                                    <a href="index-2.html">Home 01</a>
+                                  </h4>
+                                </div>
+                              </div>
+                              <div class="col-lg-4 homemenu">
+                                <div class="homemenu-thumb mb-15">
+                                  <img
+                                    src="assets/img/header/home-2.jpg"
+                                    alt="img"
+                                  />
+                                  <div class="demo-button">
+                                    <a href="index-3.html" class="theme-btn"
+                                      >View Demo</a
+                                    >
+                                  </div>
+                                </div>
+                                <div class="homemenu-content text-center">
+                                  <h4 class="homemenu-title">
+                                    <a href="index-3.html">Home 02</a>
+                                  </h4>
+                                </div>
+                              </div>
+                              <div class="col-lg-4 homemenu">
+                                <div class="homemenu-thumb mb-15">
+                                  <img
+                                    src="assets/img/header/home-3.jpg"
+                                    alt="img"
+                                  />
+                                  <div class="demo-button">
+                                    <a href="index-4.html" class="theme-btn"
+                                      >View Demo</a
+                                    >
+                                  </div>
+                                </div>
+                                <div class="homemenu-content text-center">
+                                  <h4 class="homemenu-title">
+                                    <a href="index-4.html">Home 03</a>
+                                  </h4>
+                                </div>
+                              </div>
+                              <div class="col-lg-4 homemenu">
+                                <div class="homemenu-thumb">
+                                  <img
+                                    src="assets/img/header/home-4.jpg"
+                                    alt="img"
+                                  />
+                                  <div class="demo-button">
+                                    <a href="index-5.html" class="theme-btn"
+                                      >View Demo</a
+                                    >
+                                  </div>
+                                </div>
+                                <div class="homemenu-content text-center">
+                                  <h4 class="homemenu-title">
+                                    <a href="index-5.html">Home 04</a>
+                                  </h4>
+                                </div>
+                              </div>
+                              <div class="col-lg-4 homemenu">
+                                <div class="homemenu-thumb mb-15">
+                                  <img
+                                    src="assets/img/header/home-5.jpg"
+                                    alt="img"
+                                  />
+                                  <div class="demo-button">
+                                    <a href="index-6.html" class="theme-btn"
+                                      >View Demo</a
+                                    >
+                                  </div>
+                                </div>
+                                <div class="homemenu-content text-center">
+                                  <h4 class="homemenu-title">
+                                    <a href="index-6.html">Home 05</a>
+                                  </h4>
+                                </div>
+                              </div>
+                              <div class="col-lg-4 homemenu">
+                                <div class="homemenu-thumb mb-15">
+                                  <img
+                                    src="assets/img/header/home-6.jpg"
+                                    alt="img"
+                                  />
+                                  <div class="demo-button">
+                                    <a href="index-7.html" class="theme-btn"
+                                      >View Demo</a
+                                    >
+                                  </div>
+                                </div>
+                                <div class="homemenu-content text-center">
+                                  <h4 class="homemenu-title">
+                                    <a href="index-7.html">Home 06</a>
+                                  </h4>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                        </ul> -->
+                        </li>
+                        <li class="has-dropdown">
+                          <a href="#">
+                            Offers
+                            <!-- <i class="fas fa-angle-down"></i> -->
+                          </a>
+                          <!-- <ul class="submenu">
+                          <li><a href="#">Shop Grid</a></li>
+                          <li><a href="shop-list.html">Shop List</a></li>
+                          <li>
+                            <a href="shop-left-sidebar.html"
+                              >Shop Left SideBar</a
+                            >
+                          </li>
+                          <li>
+                            <a href="shop-right-sidebar.html"
+                              >Shop Right SideBar</a
+                            >
+                          </li>
+                          <li><a href="#">Shop Single</a></li>
+                          <li>
+                            <a href="shop-single-2.html">Shop Single 2</a>
+                          </li>
+                          <li><a href="#">Shop Cart</a></li>
+                          <li><a href="checkout.html">checkout</a></li>
+                        </ul> -->
+                        </li>
+                        <li>
+                          <a href="location.html">
+                            Locations
+                            <!-- <i class="fas fa-angle-down"></i> -->
+                          </a>
+                          <!-- <ul class="submenu">
+                          <li><a href="news.html">Blog</a></li>
+                          <li>
+                            <a href="news-details.html">Blog Details</a>
+                          </li>
+                        </ul> -->
+                        </li>
+                        <li class="has-dropdown">
+                          <a href="#">
+                            Contact
+                            <!-- <i class="fas fa-angle-down"></i> -->
+                          </a>
+                          <!-- <ul class="submenu">
+                          <li><a href="about.html">About Us</a></li>
+                          <li class="has-dropdown">
+                            <a href="team.html">
+                              Chef Page
+                              <i class="fas fa-angle-down"></i>
+                            </a>
+                            <ul class="submenu">
+                              <li><a href="team.html">Chef</a></li>
+                              <li>
+                                <a href="team-details.html">Chef Details</a>
+                              </li>
+                            </ul>
+                          </li>
+                          <li class="has-dropdown">
+                            <a href="food-menu.html">
+                              Food Menu
+                              <i class="fas fa-angle-down"></i>
+                            </a>
+                            <ul class="submenu">
+                              <li>
+                                <a href="food-menu.html"> Food Menu 01</a>
+                              </li>
+                              <li>
+                                <a href="food-menu-2.html"> Food Menu 02</a>
+                              </li>
+                            </ul>
+                          </li>
+                          <li><a href="gallery.html">Gallery</a></li>
+                          <li><a href="testimonial.html">testimonial</a></li>
+                          <li><a href="reservation.html">Reservation</a></li>
+                          <li><a href="faq.html">Faq's</a></li>
+                          <li><a href="404.html">404 Page</a></li>
+                        </ul> -->
+                        </li>
+                        <!-- <li>
+                        <a href="#">Contact</a>
+                      </li> -->
+                      </ul>
+                    </nav>
+                    <!-- for wp -->
+                  </div>
+                </div>
+              </div>
+              <div
+                class="header-right d-flex justify-content-end align-items-center"
+              >
+                <div class="menu-cart">
+                  <div class="cart-box">
+                    <ul>
+                      <li>
+                        <img src="assets/img/shop-food/s2.png" alt="image" />
+                        <div class="cart-product">
+                          <a href="#0">grilled chiken</a>
+                          <span>168$</span>
+                        </div>
+                      </li>
+                    </ul>
+                    <ul>
+                      <li class="border-none">
+                        <img src="assets/img/shop-food/s3.png" alt="image" />
+                        <div class="cart-product">
+                          <a href="#0">grilled chiken</a>
+                          <span>168$</span>
+                        </div>
+                      </li>
+                    </ul>
+                    <div
+                      class="shopping-items d-flex align-items-center justify-content-between"
+                    >
+                      <span>Shopping : $20.00</span>
+                      <span>Total : $168.00</span>
+                    </div>
+                    <div
+                      class="cart-button d-flex justify-content-between mb-4"
+                    >
+                      <a href="#" class="theme-btn"> View Cart </a>
+                      <a href="#" class="theme-btn bg-red-2">
+                        Checkout
+                      </a>
+                    </div>
+                  </div>
+                  <a href="#" class="cart-icon">
+                    <i class="far fa-shopping-basket"></i>
+                  </a>
+                </div>
+                <div class="header-button">
+                  <a href="#" class="theme-btn bg-red-2"
+                    >Change location</a
+                  >
+                </div>
+                <div class="header__hamburger d-xl-block my-auto">
+                  <div class="sidebar__toggle">
+                    <div class="header-bar">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!--<< Breadcrumb Section Start >>-->
+    <div
+      style="
+        background-image: url('assets/img/location-banner.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-height: 80vh;
+      "
+    >
+      <!-- <div class="container">
+        <div class="page-heading center">
+          <h1>Contact us</h1>
+          <ul class="breadcrumb-items">
+            <li>
+              <a href="index-2.html"> Home Page </a>
+            </li>
+            <li>
+              <i class="far fa-chevron-right"></i>
+            </li>
+            <li>contact us</li>
+          </ul>
+        </div>
+      </div> -->
+    </div>
+
+    <!--<< Contact Info Section Start >>-->
+    <!-- <section class="contact-info-section fix section-padding section-bg">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".3s">
+            <div class="contact-info-items text-center">
+              <div class="icon">
+                <img src="assets/img/icon/location.svg" alt="icon-img" />
+              </div>
+              <div class="content">
+                <h3>address line</h3>
+                <p>
+                  Bowery St, New York, 37 USA <br />
+                  NY 10013,USA
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".5s">
+            <div class="contact-info-items active text-center">
+              <div class="icon">
+                <img src="assets/img/icon/phone.svg" alt="icon-img" />
+              </div>
+              <div class="content">
+                <h3>Phone Number</h3>
+                <p>
+                  +1255 - 568 - 6523 4374-221 <br />
+                  +1255 - 568 - 6523
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".7s">
+            <div class="contact-info-items text-center">
+              <div class="icon">
+                <img src="assets/img/icon/email.svg" alt="icon-img" />
+              </div>
+              <div class="content">
+                <h3>Mail Adress</h3>
+                <p>
+                  <a
+                    href="https://modinatheme.com/cdn-cgi/l/email-protection"
+                    class="__cf_email__"
+                    data-cfemail="86e3ebe7efeac6e3fee7ebf6eae3a8e5e9eb"
+                    >[email&#160;protected]</a
+                  >
+                  <br />
+                  <a
+                    href="https://modinatheme.com/cdn-cgi/l/email-protection"
+                    class="__cf_email__"
+                    data-cfemail="5a33343c351a23352f283e35373b333474393537"
+                    >[email&#160;protected]</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!--<< Contact Section Start >>-->
+    <section class="contact-section pt-5">
+      <div class="container-fluid">
+        <div class="contact-area">
+          <div class="row justify-content-between align-items-center">
+            <div class="col-xl-6 col-lg-6 location-content">
+              <div class="map-content-area">
+                <h3 class="wow fadeInUp" data-wow-delay=".3s">
+                  Pick Up From Our Location
+                </h3>
+                <p class="wow fadeInUp" data-wow-delay=".5s">
+                  Texas Chicken™ has 2 locations in Texas! Check out Texas
+                  Crispy Chicken™ locations and find the nearest Texas Crispy
+                  Chicken™ restaurant now™
+                </p>
+                <br />
+                <hr />
+                <br />
+                <h3 class="wow fadeInUp" data-wow-delay=".3s">Location 1</h3>
+                <p class="wow fadeInUp" data-wow-delay=".5s">
+                  Suit #2, 3001 Estes Pkwy Longview, TX75602 USA
+                </p>
+                <br />
+                <hr />
+                <br />
+                <h3 class="wow fadeInUp" data-wow-delay=".3s">Location 2</h3>
+                <p class="wow fadeInUp" data-wow-delay=".5s">
+                  16117 State Hwy 64, Tyler, TX 75707
+                </p>
+              </div>
+            </div>
+            <div class="col-xl-5 col-lg-5 mt-5 mt-lg-0">
+              <div style="width: 100%; height: 600px; overflow: hidden">
+                <iframe
+                  width="100%"
+                  height="100%"
+                  frameborder="0"
+                  style="border: 0"
+                  allowfullscreen
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3477.895842884079!2d-94.725123!3d32.45104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzLCsDI3JzAzLjciTiA5NMKwNDMnMzAuNCJX!5e0!3m2!1sen!2sus!4v1699644552506"
+                >
+                </iframe>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Bootstrap JS (optional for interactive components) -->
+    <section
+    id="additional-section"
+    class="food-comboo-section fix bg-cover"
+      style="background-image: url('assets/img/bg-image/bg.jpg')"
+    >
+      <!-- <div class="drinks-shape">
+        <img src="assets/img/shape/drinks.png" alt="shape-img" />
+      </div> -->
+      <div class="container-fluid">
+        <div class="comboo-wrapper">
+          <div class="row align-items-center">
+            <div class="col-xl-6">
+              <div class="food-comboo-content">
+                <div class="section-title">
+                  <!-- <span class="wow fadeInUp">crispy, every bite taste</span> -->
+                  <h2 class="wow fadeInUp" data-wow-delay=".3s">
+                    <h3>
+                      Texas Crispy Chicken – Redefining the fast-food experience
+                      with its exceptionalfried chicken
+                    </h3>
+                  </h2>
+                </div>
+                <p
+                  style="color: black"
+                  class="wow fadeInUp"
+                  data-wow-delay=".5s"
+                >
+                  This haven for fried chicken enthusiasts serves up an array of
+                  tantalizing options, featuring a menu that boasts the
+                  crispiest and most flavorful chicken in the city. At Texas
+                  Crispy Chicken, each dish is a masterpiece, from the classic
+                  Crispy Chicken to the ever-popular Crispy Zenga Burger. Our
+                  Kababjees Fried Chicken menu is carefully curated to ensure
+                  every bite is a delightful experience. Whether you're craving
+                  Crispy Chicken Wings or the best fried chicken in Texas, our
+                  menu is designed to cater to all tastes. What sets us apart is
+                  our dedication to quality and flavor, making us a standout
+                  choice for fried chicken in Texas. Convenience is a key in
+                  today's fast-paced world. Texas Crispy Chicken delivery is
+                  swift and reliable, ensuring that your meal arrives hot,
+                  fresh, and ready to delight your taste buds. With exciting
+                  fried chicken deals, we offer great value, making our
+                  mouth-watering chicken accessible to everyone. At Texas Crispy
+                  Chicken, we're committed to offering the most delicious crispy
+                  fried chicken that Texas loves. So what are you waiting for?
+                  ORDER NOW and enjoy the best fried chicken in the city.
+                </p>
+                <!-- <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <button
+                  class="nav-link wow fadeInUp"
+                  data-wow-delay=".3s"
+                  id="nav-home-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#nav-home"
+                  type="button"
+                  role="tab"
+                  aria-controls="nav-home"
+                  aria-selected="true"
+                >
+                  <span class="food-comboo-list">
+                    <span class="offer-image">
+                      <img src="assets/img/offer/chicken.png" alt="img" />
+                    </span>
+                    <span class="comboo-title">
+                      30% off 4pcs hot crispy & 8 pcs wing
+                    </span>
+                  </span>
+                </button>
+                <button
+                  class="nav-link active wow fadeInUp"
+                  data-wow-delay=".5s"
+                  id="nav-profile-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#nav-profile"
+                  type="button"
+                  role="tab"
+                  aria-controls="nav-profile"
+                  aria-selected="false"
+                >
+                  <span class="food-comboo-list">
+                    <span class="offer-image">
+                      <img src="assets/img/offer/pizza.png" alt="img" />
+                    </span>
+                    <span class="comboo-title">
+                      20% off tasty pizza with drink
+                    </span>
+                  </span>
+                </button>
+                <button
+                  class="nav-link wow fadeInUp"
+                  data-wow-delay=".7s"
+                  id="nav-contact-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#nav-contact"
+                  type="button"
+                  role="tab"
+                  aria-controls="nav-contact"
+                  aria-selected="false"
+                >
+                  <span class="food-comboo-list">
+                    <span class="offer-image">
+                      <img src="assets/img/offer/burger.png" alt="img" />
+                    </span>
+                    <span class="comboo-title">
+                      2pcs humbergur with drinks & sauce
+                    </span>
+                  </span>
+                </button>
+              </div> -->
+              </div>
+            </div>
+            <div class="col-xl-6" style="text-align: center">
+              <img width="400" src="assets/img/chiken.png" alt="" />
+              <!-- <div class="tab-content" id="nav-tab-Content">
+              <div
+                class="tab-pane fade show active"
+                id="nav-home"
+                role="tabpanel"
+                aria-labelledby="nav-home-tab"
+              >
+                <div
+                  class="comboo-image bg-cover"
+                  style="
+                    background-image: url('assets/img/banner/comboo-bg.jpg');
+                  "
+                >
+                  <div class="pizza-text">
+                    <img
+                      src="assets/img/shape/combo-pizza-text.png"
+                      alt="shape-img"
+                    />
+                  </div>
+                  <div class="pizza-image">
+                    <img src="assets/img/food/big-pizza.png" alt="food-img" />
+                  </div>
+                  <div class="offer-shape">
+                    <img
+                      src="assets/img/offer/50percent-off-2.png"
+                      alt="shape-img"
+                    />
+                  </div>
+                  <div class="vegetable-shape">
+                    <img
+                      src="assets/img/shape/vegetable.png"
+                      alt="shape-img"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="nav-profile"
+                role="tabpanel"
+                aria-labelledby="nav-profile-tab"
+              >
+                <div
+                  class="comboo-image bg-cover"
+                  style="
+                    background-image: url('assets/img/banner/comboo-bg.jpg');
+                  "
+                >
+                  <div class="pizza-text">
+                    <img
+                      src="assets/img/shape/combo-pizza-text.png"
+                      alt="shape-img"
+                    />
+                  </div>
+                  <div class="pizza-image">
+                    <img src="assets/img/food/big-pizza.png" alt="food-img" />
+                  </div>
+                  <div class="offer-shape">
+                    <img
+                      src="assets/img/offer/50percent-off-2.png"
+                      alt="shape-img"
+                    />
+                  </div>
+                  <div class="vegetable-shape">
+                    <img
+                      src="assets/img/shape/vegetable.png"
+                      alt="shape-img"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="nav-contact"
+                role="tabpanel"
+                aria-labelledby="nav-contact-tab"
+              >
+                <div
+                  class="comboo-image bg-cover"
+                  style="
+                    background-image: url('assets/img/banner/comboo-bg.jpg');
+                  "
+                >
+                  <div class="pizza-text">
+                    <img
+                      src="assets/img/shape/combo-pizza-text.png"
+                      alt="shape-img"
+                    />
+                  </div>
+                  <div class="pizza-image">
+                    <img src="assets/img/food/big-pizza.png" alt="food-img" />
+                  </div>
+                  <div class="offer-shape">
+                    <img
+                      src="assets/img/offer/50percent-off-2.png"
+                      alt="shape-img"
+                    />
+                  </div>
+                  <div class="vegetable-shape">
+                    <img
+                      src="assets/img/shape/vegetable.png"
+                      alt="shape-img"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section Start -->
+    <footer class="footer-section fix section-bg">
+      <div class="burger-shape">
+        <img src="assets/img/shape/burger-shape-3.png" alt="burger-shape" />
+      </div>
+      <div class="fry-shape">
+        <img src="assets/img/shape/fry-shape-2.png" alt="burger-shape" />
+      </div>
+      <div class="container">
+        <div class="footer-widgets-wrapper">
+          <div class="row">
+            <div
+              class="col-xl-3 col-sm-6 col-md-6 col-lg-3 wow fadeInUp"
+              data-wow-delay=".2s"
+            >
+              <div class="single-footer-widget">
+                <div class="widget-head">
+                  <a href="index-2.html">
+                    <img width="200" src="assets/img/logo.png" alt="logo-img" />
+                  </a>
+                </div>
+                <!-- <div class="footer-content">
+                  <p>
+                    We believe it has the power to do <br />
+                    amazing things.
+                  </p>
+                  <span>Interested in working with us?</span> <br />
+                  <a
+                    href="https://modinatheme.com/cdn-cgi/l/email-protection#bdd4d3dbd2fdd8c5dcd0cdd1d893ded2d0"
+                    class="link"
+                    ><span
+                      class="__cf_email__"
+                      data-cfemail="630a0d050c23061b020e130f064d000c0e"
+                      >[email&#160;protected]</span
+                    ></a
+                  >
+                  <div class="social-icon d-flex align-items-center">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-vimeo-v"></i></a>
+                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                  </div>
+                </div> -->
+              </div>
+            </div>
+            <!-- <div
+              class="col-xl-2 ps-lg-5 col-sm-6 col-md-3 col-lg-3 wow fadeInUp"
+              data-wow-delay=".4s"
+            >
+              <div class="single-footer-widget">
+                <div class="widget-head">
+                  <h4>Quick Links</h4>
+                </div>
+                <ul class="list-items">
+                  <li>
+                    <a href="about.html">
+                      <span class="text-effect">
+                        <span class="effect-1">Services</span>
+                        <span class="effect-1">Services</span>
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="about.html">
+                      <span class="text-effect">
+                        <span class="effect-1">About company</span>
+                        <span class="effect-1">About company</span>
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="news-details.html">
+                      <span class="text-effect">
+                        <span class="effect-1">latest news</span>
+                        <span class="effect-1">latest news</span>
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="team.html">
+                      <span class="text-effect">
+                        <span class="effect-1">team member</span>
+                        <span class="effect-1">team member</span>
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="testimonial.html">
+                      <span class="text-effect">
+                        <span class="effect-1">testimonials</span>
+                        <span class="effect-1">testimonials</span>
+                      </span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="col-xl-2 ps-lg-4 col-sm-6 col-md-3 col-lg-3 wow fadeInUp"
+              data-wow-delay=".6s"
+            >
+              <div class="single-footer-widget">
+                <div class="widget-head">
+                  <h4>My account</h4>
+                </div>
+                <ul class="list-items">
+                  <li>
+                    <a href="#">
+                      <span class="text-effect">
+                        <span class="effect-1">My Profile</span>
+                        <span class="effect-1">My Profile</span>
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <span class="text-effect">
+                        <span class="effect-1">My Order History</span>
+                        <span class="effect-1">My Order History</span>
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <span class="text-effect">
+                        <span class="effect-1">My Wish List</span>
+                        <span class="effect-1">My Wish List</span>
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <span class="text-effect">
+                        <span class="effect-1">Order Tracking</span>
+                        <span class="effect-1">Order Tracking</span>
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <span class="text-effect">
+                        <span class="effect-1">Shopping Cart</span>
+                        <span class="effect-1">Shopping Cart</span>
+                      </span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div> -->
+            <div
+              class="col-xl-4 col-sm-6 col-md-6 col-lg-3 wow fadeInUp"
+              data-wow-delay=".8s"
+            >
+              <div class="single-footer-widget">
+                <div class="widget-head">
+                  <h4>Address:</h4>
+                </div>
+                <div class="footer-address-text">
+                  <h6>
+                    Suit #2, 3001 Estes Pkwy Longview, TX75602 USA
+                    16117 State Hwy 64, Tyler, TX 75707
+                  </h6>
+                  <h5>Email:</h5>
+                  <h6>
+                    texascrispychicken@gmail.com
+                  </h6>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-xl-4 ps-xl-5 col-sm-6 col-md-6 col-lg-4 wow fadeInUp"
+              data-wow-delay=".9s"
+            >
+              <div class="single-footer-widget">
+                <div class="widget-head">
+                  <h4>Install app</h4>
+                </div>
+                <div class="footer-apps-items">
+                  <h5>From App Store or Google Play</h5>
+                  <div class="apps-image d-flex align-items-center">
+                    <a href="#"
+                      ><img src="assets/img/app-store.png" alt="store-img"
+                    /></a>
+                    <a href="#"
+                      ><img src="assets/img/google-play.png" alt="store-img"
+                    /></a>
+                  </div>
+                  <div class="support-text">
+                    <h5>24/7 Support center</h5>
+                    <h3><a href="tel:+1718-904-4450">(903) 740-1464</a></h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container">
+          <div
+            class="footer-bottom-wrapper d-flex align-items-center justify-content-between"
+          >
+            <p class="wow fadeInLeft" data-wow-delay=".3s">
+              ® 2025 Texas Crispy Chicken
+            </p>
+            <div class="card-image wow fadeInRight" data-wow-delay=".5s">
+              <img src="assets/img/card.png" alt="card-img" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back To Top Start -->
+    <div class="scroll-up">
+      <svg
+        class="scroll-circle svg-content"
+        width="100%"
+        height="100%"
+        viewBox="-1 -1 102 102"
+      >
+        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+      </svg>
+    </div>
+
+    <!--<< All JS Plugins >>-->
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-rZ6TepNbjSXXxmN1xg8l4r4KRtKpD6B6Mq/NFU3v3N6wH0j5FNA6Dkh6Ij0UnRfz"
-      crossorigin="anonymous"
+      data-cfasync="false"
+      src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
     ></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-    <!-- jQuery (required for Slick Carousel) -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-
-    <!-- Slick Carousel Initialization -->
-    <script>
-      $(document).ready(function () {
-        $(".slider").slick({
-          dots: false,
-          infinite: true,
-          speed: 500,
-          slidesToShow: 8,
-          slidesToScroll: 8,
-          autoplay: true,
-          autoplaySpeed: 3000,
-          responsive: [
-            {
-              breakpoint: 1024,
-              settings: {
-                slidesToShow: 3,
-                slidesToScroll: 3,
-                infinite: true,
-                dots: true,
-              },
-            },
-            {
-              breakpoint: 600,
-              settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2,
-                initialSlide: 2,
-              },
-            },
-            {
-              breakpoint: 480,
-              settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
-              },
-            },
-          ],
-        });
-      });
-      function openNav() {
-        document.getElementById("mySidenav").style.width = "250px";
-      }
-      function closeNav() {
-        document.getElementById("mySidenav").style.width = "0";
-      }
-    </script>
-
-    <!-- Other JS work code -->
-    <script>
-      // Links Active
-      document.addEventListener("DOMContentLoaded", function () {
-        const currentPath = window.location.pathname.split("/").pop(); // e.g. menu.html
-        const links = document.querySelectorAll(".links a");
-
-        links.forEach((link) => {
-          const href = link.getAttribute("href");
-          const fileName = href.split("/").pop(); // strip ./ if present
-          if (fileName === currentPath) {
-            link.parentElement.classList.add("active");
-          }
-        });
-      });
-      // Add 4 Product Card Script
-      document
-        .getElementById("load-more")
-        .addEventListener("click", function () {
-          let container = document.getElementById("product-container");
-          let button = document.getElementById("load-more");
-
-          for (let i = 0; i < 4; i++) {
-            let newCard = document.createElement("div");
-            newCard.className =
-              "col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12 mb-4 px-xs-0";
-            newCard.innerHTML = `
-                    <div class="product-card">
-                        <img src="assets/images/menu.png" alt="" class="image">
-                        <div class="product-card-body">
-                            <h5 class="product-card-title">Legs Quarte</h5>
-                            <p class="product-card-text">2 Pcs Crispy Chicken Leg & Dip.</p>
-                        </div>
-                    </div>
-                `;
-            container.appendChild(newCard);
-          }
-
-          // Load More Button ko Hide kar dein
-          button.style.display = "none";
-        });
-    </script>
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <!--<< Viewport Js >>-->
+    <script src="assets/js/viewport.jquery.js"></script>
+    <!--<< Bootstrap Js >>-->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!--<< Nice Select Js >>-->
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <!--<< Waypoints Js >>-->
+    <script src="assets/js/jquery.waypoints.js"></script>
+    <!--<< Counterup Js >>-->
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <!--<< Swiper Slider Js >>-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <!--<< MeanMenu Js >>-->
+    <script src="assets/js/jquery.meanmenu.min.js"></script>
+    <!--<< Magnific Popup Js >>-->
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <!--<< GSAP Animation Js >>-->
+    <script src="assets/js/animation.js"></script>
+    <!--<< Wow Animation Js >>-->
+    <script src="assets/js/wow.min.js"></script>
+    <!--<< Main.js >>-->
+    <script src="assets/js/main.js"></script>
   </body>
 </html>
